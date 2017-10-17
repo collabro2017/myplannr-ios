@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rLO-cb-5Jz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <scenes>
+        <!--Chat-->
+        <scene sceneID="ogo-dp-sIT">
+            <objects>
+                <viewController title="Chat" id="rLO-cb-5Jz" customClass="MYPChatViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Chat" id="05P-Vy-ZqA">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="94A-Tu-b3p">
+                            <connections>
+                                <action selector="handleDoneBarButtonClick:" destination="rLO-cb-5Jz" id="jq1-7U-1kW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="doneBarButton" destination="94A-Tu-b3p" id="Ghg-JE-aPR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsO-yI-E8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="-546"/>
+        </scene>
+    </scenes>
+</document>

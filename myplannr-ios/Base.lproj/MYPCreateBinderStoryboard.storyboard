@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nfk-yj-sA4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Binder-->
+        <scene sceneID="rRz-Gr-lvU">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="k2E-b7-lYW" customClass="MYPCreateBinderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7MF-VF-34A"/>
+                        <viewControllerLayoutGuide type="bottom" id="hqB-Vr-g8m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oIh-ZN-yiR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tz-c4-flE" customClass="MYPCreateOrEditBinderView">
+                                <rect key="frame" x="24" y="88" width="327" height="555"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hqB-Vr-g8m" firstAttribute="top" secondItem="4tz-c4-flE" secondAttribute="bottom" constant="24" id="DEl-8d-hqp"/>
+                            <constraint firstItem="4tz-c4-flE" firstAttribute="top" secondItem="7MF-VF-34A" secondAttribute="bottom" constant="24" id="FCU-mD-YWa"/>
+                            <constraint firstItem="4tz-c4-flE" firstAttribute="leading" secondItem="oIh-ZN-yiR" secondAttribute="leading" constant="24" id="ZDr-qw-TYf"/>
+                            <constraint firstAttribute="trailing" secondItem="4tz-c4-flE" secondAttribute="trailing" constant="24" id="kyy-ZW-dB3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Binder" id="Gqr-Fy-TNE">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="ecS-9x-MX5">
+                            <connections>
+                                <action selector="handleCancelBarButtonClick:" destination="k2E-b7-lYW" id="yOZ-k8-tLZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="W2B-dI-vXW">
+                            <connections>
+                                <action selector="handleDoneBarButtonClick:" destination="k2E-b7-lYW" id="lJh-kq-wx0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="binderView" destination="4tz-c4-flE" id="Cdo-Zc-oxR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUq-DL-Fjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="48.125937031484263"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3mK-Pj-uPx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nfk-yj-sA4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eio-Cm-EBV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="k2E-b7-lYW" kind="relationship" relationship="rootViewController" id="QWT-zf-1eE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HK8-3j-z1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.79999999999995" y="48.125937031484263"/>
+        </scene>
+    </scenes>
+</document>

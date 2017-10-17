@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="64" id="5et-jk-RCJ" customClass="MYPBinderTabCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5et-jk-RCJ" id="W0O-Pk-jPI">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="grP-B5-fJJ">
+                        <rect key="frame" x="24" y="0.0" width="327" height="64"/>
+                        <subviews>
+                            <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKa-B1-akq" customClass="MYPCheckbox">
+                                <rect key="frame" x="16" y="19" width="26" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="iQE-e9-NBa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="checked" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vw-S6-Xhn" userLabel="Tab Color View">
+                                <rect key="frame" x="54" y="16" width="3" height="32"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.16862745100000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="p1I-cI-QPq"/>
+                                    <constraint firstAttribute="width" constant="3" id="wqk-uS-VbP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE9-hf-REk">
+                                <rect key="frame" x="73" y="21" width="216" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DisclosureIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="wsH-d3-rQF">
+                                <rect key="frame" x="301" y="26" width="8" height="13"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5vw-S6-Xhn" firstAttribute="centerY" secondItem="grP-B5-fJJ" secondAttribute="centerY" id="2zr-6d-i9A"/>
+                            <constraint firstItem="uE9-hf-REk" firstAttribute="centerY" secondItem="grP-B5-fJJ" secondAttribute="centerY" id="9Kc-r1-vmc"/>
+                            <constraint firstItem="wsH-d3-rQF" firstAttribute="leading" secondItem="uE9-hf-REk" secondAttribute="trailing" constant="12" id="AYx-Y0-LqF"/>
+                            <constraint firstItem="dKa-B1-akq" firstAttribute="centerY" secondItem="grP-B5-fJJ" secondAttribute="centerY" id="Hph-CC-NDQ"/>
+                            <constraint firstItem="uE9-hf-REk" firstAttribute="leading" secondItem="5vw-S6-Xhn" secondAttribute="trailing" constant="16" id="OmD-a8-2J6"/>
+                            <constraint firstItem="wsH-d3-rQF" firstAttribute="centerY" secondItem="grP-B5-fJJ" secondAttribute="centerY" id="SVS-nV-Cwg"/>
+                            <constraint firstItem="5vw-S6-Xhn" firstAttribute="leading" secondItem="dKa-B1-akq" secondAttribute="trailing" constant="12" id="aa8-qK-JGw"/>
+                            <constraint firstItem="dKa-B1-akq" firstAttribute="leading" secondItem="grP-B5-fJJ" secondAttribute="leading" constant="16" id="cD7-0B-VMD"/>
+                            <constraint firstAttribute="trailing" secondItem="wsH-d3-rQF" secondAttribute="trailing" constant="18" id="zPf-ri-xJn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="grP-B5-fJJ" secondAttribute="bottom" id="9xt-kv-aoj"/>
+                    <constraint firstItem="grP-B5-fJJ" firstAttribute="top" secondItem="W0O-Pk-jPI" secondAttribute="top" id="G2m-sC-eYm"/>
+                    <constraint firstItem="grP-B5-fJJ" firstAttribute="leading" secondItem="W0O-Pk-jPI" secondAttribute="leading" constant="24" id="kzi-X4-avx"/>
+                    <constraint firstAttribute="trailing" secondItem="grP-B5-fJJ" secondAttribute="trailing" constant="24" id="tqV-9c-ffy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="checkbox" destination="dKa-B1-akq" id="Uob-VQ-6I7"/>
+                <outlet property="checkboxLeadingMarginConstraint" destination="cD7-0B-VMD" id="6ty-by-B2h"/>
+                <outlet property="checkboxWidthConstraint" destination="iQE-e9-NBa" id="jXx-IQ-CGb"/>
+                <outlet property="contentCardView" destination="grP-B5-fJJ" id="Wca-NJ-d4V"/>
+                <outlet property="tabColorView" destination="5vw-S6-Xhn" id="NI4-IA-2yb"/>
+                <outlet property="tabNameLabel" destination="uE9-hf-REk" id="Fij-u5-wrm"/>
+            </connections>
+            <point key="canvasLocation" x="-30.5" y="-303"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DisclosureIndicator" width="8" height="13"/>
+    </resources>
+</document>

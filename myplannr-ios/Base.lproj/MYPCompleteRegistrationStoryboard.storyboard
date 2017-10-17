@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8tp-B5-aZL">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Almost Done!-->
+        <scene sceneID="BwG-En-5Ur">
+            <objects>
+                <viewController title="Almost Done!" automaticallyAdjustsScrollViewInsets="NO" id="8tp-B5-aZL" customClass="MYPCompleteRegistrationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fEI-UO-xEn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ggJ-65-xNJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gkK-oz-F99">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please specify your name to help  your collaborators identify you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDt-ot-AE8" userLabel="hint label">
+                                <rect key="frame" x="48" y="60" width="224" height="33.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="8Nc-Xt-d07"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ota-aT-6fT" customClass="MYPUserProfileCardView">
+                                <rect key="frame" x="24" y="109.5" width="272" height="184"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdC-r9-iQj" userLabel="Sign Up Button">
+                                <rect key="frame" x="122.5" y="317.5" width="75" height="40"/>
+                                <color key="backgroundColor" red="0.72941176470000002" green="0.86666666670000003" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="18" minY="10" maxX="18" maxY="10"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.27450980390000002" green="0.35294117650000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleDoneButtonClick:" destination="8tp-B5-aZL" eventType="touchUpInside" id="8bf-Hy-EC4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KDt-ot-AE8" firstAttribute="centerX" secondItem="gkK-oz-F99" secondAttribute="centerX" id="0Ta-de-XEA"/>
+                            <constraint firstItem="UdC-r9-iQj" firstAttribute="top" secondItem="ota-aT-6fT" secondAttribute="bottom" constant="24" id="4G5-G0-Loh"/>
+                            <constraint firstItem="KDt-ot-AE8" firstAttribute="leading" secondItem="gkK-oz-F99" secondAttribute="leading" constant="48" id="Fy8-9q-Mzc"/>
+                            <constraint firstItem="KDt-ot-AE8" firstAttribute="top" secondItem="fEI-UO-xEn" secondAttribute="bottom" constant="16" id="NI2-Fh-NJf"/>
+                            <constraint firstItem="ota-aT-6fT" firstAttribute="top" secondItem="KDt-ot-AE8" secondAttribute="bottom" constant="16" id="TCt-DI-bvJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ota-aT-6fT" secondAttribute="trailing" constant="24" id="bG3-dP-ffF"/>
+                            <constraint firstAttribute="trailing" secondItem="KDt-ot-AE8" secondAttribute="trailing" constant="48" id="iV5-Of-RuF"/>
+                            <constraint firstItem="UdC-r9-iQj" firstAttribute="centerX" secondItem="gkK-oz-F99" secondAttribute="centerX" id="pab-lb-6Mm"/>
+                            <constraint firstItem="ota-aT-6fT" firstAttribute="leading" secondItem="gkK-oz-F99" secondAttribute="leading" constant="24" id="yyo-Rh-8dX"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="doneButton" destination="UdC-r9-iQj" id="UCa-qk-8O7"/>
+                        <outlet property="hintLabel" destination="KDt-ot-AE8" id="Ser-9c-TiC"/>
+                        <outlet property="userProfileCardView" destination="ota-aT-6fT" id="gPr-cB-3f5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Izv-nO-shI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-212" y="-17.541229385307346"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iwY-W6-Oo5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MYPTabPickerStoryboard-->
+        <scene sceneID="YCy-cy-vnG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MYPTabPickerStoryboard" id="ik9-zl-gLL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbp-Y6-ZRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="19"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5o6-Bg-pIA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iwY-W6-Oo5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="moc-Oc-bw1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YmK-Ut-MNm" kind="relationship" relationship="rootViewController" id="ABH-AZ-uir"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lP6-sa-l1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-282.39999999999998" y="19.340329835082461"/>
+        </scene>
+        <!--Choose Binder-->
+        <scene sceneID="HGq-0b-qK0">
+            <objects>
+                <tableViewController id="YmK-Ut-MNm" customClass="MYPBinderPickerViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dzi-WU-5zE" customClass="MYPTableView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="YmK-Ut-MNm" id="k3o-DF-BfG"/>
+                            <outlet property="delegate" destination="YmK-Ut-MNm" id="fjp-1c-0tf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Choose Binder" id="N80-zb-VQM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="FB6-TI-YC2">
+                            <connections>
+                                <action selector="handleCancelBarButtonClick:" destination="YmK-Ut-MNm" id="UBW-sq-R4g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="ik9-zl-gLL" kind="show" identifier="showTabPickerController" id="efF-dr-h7H"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aze-p7-PzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="19"/>
+        </scene>
+    </scenes>
+</document>

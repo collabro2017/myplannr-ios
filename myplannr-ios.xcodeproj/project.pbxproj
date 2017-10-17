@@ -1,0 +1,1874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36B9DAF1AA773F22F860B171 /* libPods-myplannr-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F91FCD714F36CA7CE4C41F1C /* libPods-myplannr-ios.a */; };
+		F00858851E127F3E00A86BA0 /* MYPChatStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00858831E127F3E00A86BA0 /* MYPChatStoryboard.storyboard */; };
+		F00B37B11E548CB400D4B2CD /* MYPCreateOrEditBinderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F00B37B01E548CB400D4B2CD /* MYPCreateOrEditBinderView.m */; };
+		F0259A771E572D3B00A6ECE2 /* MYPInviteUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0259A741E572D3B00A6ECE2 /* MYPInviteUsersViewController.m */; };
+		F0259A7F1E57326400A6ECE2 /* MYPManageBinderUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0259A7A1E57326400A6ECE2 /* MYPManageBinderUsersViewController.m */; };
+		F0259A801E57326400A6ECE2 /* MYPBinderUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0259A7E1E57326400A6ECE2 /* MYPBinderUserCell.m */; };
+		F0259A831E57357C00A6ECE2 /* MYPManageBinderUsersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0259A821E57357C00A6ECE2 /* MYPManageBinderUsersModel.m */; };
+		F02824B51E782ADC00788CEA /* MYPInvitedUserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02824B31E782ADC00788CEA /* MYPInvitedUserCollectionViewCell.xib */; };
+		F02894961E6188B5005D17D1 /* FCSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F02894951E6188B5005D17D1 /* FCSession.m */; };
+		F02A97171E4F3D5600627669 /* MYPEditBinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F02A97161E4F3D5600627669 /* MYPEditBinderViewController.m */; };
+		F02A971A1E4F3D6600627669 /* MYPEditBinderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F02A97191E4F3D6600627669 /* MYPEditBinderModel.m */; };
+		F02A971D1E4F439600627669 /* NSDateFormatter+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F02A971C1E4F439600627669 /* NSDateFormatter+Extensions.m */; };
+		F042731D1E5CAF05000D4199 /* MYPBinderTabDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04273161E5CAF05000D4199 /* MYPBinderTabDetailsController.m */; };
+		F042731E1E5CAF05000D4199 /* MYPDocumentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F042731A1E5CAF05000D4199 /* MYPDocumentCell.m */; };
+		F042731F1E5CAF05000D4199 /* MYPTooBigDocumentWarningAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F042731C1E5CAF05000D4199 /* MYPTooBigDocumentWarningAlert.m */; };
+		F04273221E5CAFBF000D4199 /* MYPBinderTabDocumentsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F04273211E5CAFBF000D4199 /* MYPBinderTabDocumentsModel.m */; };
+		F0479B3E1DD6447F00187A69 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0479B3D1DD6447F00187A69 /* QuickLook.framework */; };
+		F04B7C1F1E67106B008F2F39 /* MYPFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F04B7C1E1E67106B008F2F39 /* MYPFileUtils.m */; };
+		F058EFB91DF17AE000736B47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFB81DF17AE000736B47 /* AppDelegate.m */; };
+		F058EFD31DF17B1300736B47 /* MYPCardViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFBD1DF17B1300736B47 /* MYPCardViewCell.m */; };
+		F058EFD41DF17B1300736B47 /* MYPEditableCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFC01DF17B1300736B47 /* MYPEditableCollectionView.m */; };
+		F058EFD51DF17B1300736B47 /* MYPEditableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFC21DF17B1300736B47 /* MYPEditableCollectionViewCell.m */; };
+		F058EFD61DF17B1300736B47 /* MYPCenteredFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFC41DF17B1300736B47 /* MYPCenteredFlowLayout.m */; };
+		F058EFD71DF17B1300736B47 /* MYPCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFC71DF17B1300736B47 /* MYPCardView.m */; };
+		F058EFD81DF17B1300736B47 /* MYPCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFC91DF17B1300736B47 /* MYPCheckbox.m */; };
+		F058EFD91DF17B1300736B47 /* MYPCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFCB1DF17B1300736B47 /* MYPCircleButton.m */; };
+		F058EFDA1DF17B1300736B47 /* MYPColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFCD1DF17B1300736B47 /* MYPColorPickerView.m */; };
+		F058EFDB1DF17B1300736B47 /* MYPTabTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFCF1DF17B1300736B47 /* MYPTabTitleView.m */; };
+		F058EFDC1DF17B1300736B47 /* MYPUserProfileCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFD11DF17B1300736B47 /* MYPUserProfileCardView.m */; };
+		F058EFDD1DF17B1300736B47 /* MYPUserProfileCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F058EFD21DF17B1300736B47 /* MYPUserProfileCardView.xib */; };
+		F058EFE11DF17BA600736B47 /* MYPStartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFE01DF17BA600736B47 /* MYPStartPageViewController.m */; };
+		F058EFE51DF17BFD00736B47 /* MYPSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFE41DF17BFD00736B47 /* MYPSignInViewController.m */; };
+		F058EFE91DF17C4E00736B47 /* MYPSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFE81DF17C4E00736B47 /* MYPSignUpViewController.m */; };
+		F058EFEC1DF17C5F00736B47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058EFEA1DF17C5F00736B47 /* Main.storyboard */; };
+		F058EFEF1DF17C7000736B47 /* MYPSignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058EFED1DF17C7000736B47 /* MYPSignInStoryboard.storyboard */; };
+		F058EFF21DF17C7B00736B47 /* MYPSignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058EFF01DF17C7B00736B47 /* MYPSignUpStoryboard.storyboard */; };
+		F058EFF61DF17CB400736B47 /* MYPRecoverPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFF51DF17CB400736B47 /* MYPRecoverPasswordViewController.m */; };
+		F058EFF91DF17CBD00736B47 /* MYPRecoverPasswordStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058EFF71DF17CBD00736B47 /* MYPRecoverPasswordStoryboard.storyboard */; };
+		F058EFFD1DF17D3500736B47 /* MYPCompleteRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F058EFFC1DF17D3500736B47 /* MYPCompleteRegistrationViewController.m */; };
+		F058F0001DF17D3E00736B47 /* MYPCompleteRegistrationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058EFFE1DF17D3E00736B47 /* MYPCompleteRegistrationStoryboard.storyboard */; };
+		F058F00D1DF17D8000736B47 /* MYPBinderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F058F00B1DF17D8000736B47 /* MYPBinderCollectionViewCell.xib */; };
+		F058F0101DF17D8800736B47 /* MYPBindersListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F00E1DF17D8800736B47 /* MYPBindersListStoryboard.storyboard */; };
+		F058F0231DF17DF700736B47 /* MYPCreateBinderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F0211DF17DF700736B47 /* MYPCreateBinderStoryboard.storyboard */; };
+		F058F02A1DF17E3300736B47 /* MYPEditBinderStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F0281DF17E3300736B47 /* MYPEditBinderStoryboard.storyboard */; };
+		F058F0311DF17E5A00736B47 /* MYPInviteUsersStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F02F1DF17E5A00736B47 /* MYPInviteUsersStoryboard.storyboard */; };
+		F058F03B1DF17E8700736B47 /* MYPManageBinderUsersStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F0391DF17E8700736B47 /* MYPManageBinderUsersStoryboard.storyboard */; };
+		F058F0471DF17EC500736B47 /* MYPBinderTabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F058F0431DF17EC500736B47 /* MYPBinderTabCell.xib */; };
+		F058F0481DF17EC500736B47 /* MYPBinderTabsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F0451DF17EC500736B47 /* MYPBinderTabsStoryboard.storyboard */; };
+		F058F05E1DF17F3F00736B47 /* MYPBinderTabDetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F05A1DF17F3F00736B47 /* MYPBinderTabDetailsStoryboard.storyboard */; };
+		F058F05F1DF17F3F00736B47 /* MYPDocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F058F05C1DF17F3F00736B47 /* MYPDocumentCell.xib */; };
+		F058F0691DF17FBD00736B47 /* MYPDocumentsPreviewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F0671DF17FBD00736B47 /* MYPDocumentsPreviewStoryboard.storyboard */; };
+		F058F0711DF17FF600736B47 /* MYPBinderPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0701DF17FF600736B47 /* MYPBinderPickerViewController.m */; };
+		F058F0741DF1800000736B47 /* MYPBinderPickerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F0721DF1800000736B47 /* MYPBinderPickerStoryboard.storyboard */; };
+		F058F0781DF1802300736B47 /* MYPTabPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0771DF1802300736B47 /* MYPTabPickerViewController.m */; };
+		F058F07B1DF1802C00736B47 /* MYPTabPickerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F0791DF1802C00736B47 /* MYPTabPickerStoryboard.storyboard */; };
+		F058F0881DF1805500736B47 /* MYPGetUnlimitedAccessStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F0861DF1805500736B47 /* MYPGetUnlimitedAccessStoryboard.storyboard */; };
+		F058F08C1DF1808600736B47 /* MYPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F08B1DF1808600736B47 /* MYPSettingsViewController.m */; };
+		F058F08F1DF1809000736B47 /* MYPSettingsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F058F08D1DF1809000736B47 /* MYPSettingsStoryboard.storyboard */; };
+		F058F0AA1DF180AB00736B47 /* FCNetworkServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0931DF180AB00736B47 /* FCNetworkServiceBase.m */; };
+		F058F0AC1DF180AB00736B47 /* MYPService.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0981DF180AB00736B47 /* MYPService.m */; };
+		F058F0B41DF180AB00736B47 /* RKValueTransformer+Extenstions.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0A91DF180AB00736B47 /* RKValueTransformer+Extenstions.m */; };
+		F058F0C91DF180BF00736B47 /* MYPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0B71DF180BE00736B47 /* MYPConstants.m */; };
+		F058F0CA1DF180BF00736B47 /* MYPDocumentPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0BA1DF180BE00736B47 /* MYPDocumentPicker.m */; };
+		F058F0CB1DF180BF00736B47 /* MYPFilesDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0BC1DF180BE00736B47 /* MYPFilesDownloader.m */; };
+		F058F0CC1DF180BF00736B47 /* MYPUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0BE1DF180BE00736B47 /* MYPUserProfile.m */; };
+		F058F0CD1DF180BF00736B47 /* MYPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0C01DF180BE00736B47 /* MYPUtils.m */; };
+		F058F0CE1DF180BF00736B47 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0C21DF180BE00736B47 /* NSString+Utilities.m */; };
+		F058F0CF1DF180BF00736B47 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0C41DF180BE00736B47 /* UIColor+Extensions.m */; };
+		F058F0D01DF180BF00736B47 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0C61DF180BF00736B47 /* UIImage+Extensions.m */; };
+		F058F0D11DF180BF00736B47 /* UIImageView+Letters.m in Sources */ = {isa = PBXBuildFile; fileRef = F058F0C81DF180BF00736B47 /* UIImageView+Letters.m */; };
+		F05B803B1D50D8D1007F227F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F05B803A1D50D8D1007F227F /* main.m */; };
+		F05B80461D50D8D1007F227F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05B80451D50D8D1007F227F /* Assets.xcassets */; };
+		F06738791E5B127A00E9739B /* MYPCreateOrEditTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06738741E5B127A00E9739B /* MYPCreateOrEditTabViewController.m */; };
+		F067387A1E5B127A00E9739B /* MYPCreateOrEditTabModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F06738771E5B127A00E9739B /* MYPCreateOrEditTabModel.m */; };
+		F06738801E5B135400E9739B /* MYPCreateOrEditTabStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F067387E1E5B135400E9739B /* MYPCreateOrEditTabStoryboard.storyboard */; };
+		F06BFEAF1E6599F10053B151 /* MYPGetUnlimitedAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06BFEA81E6599F10053B151 /* MYPGetUnlimitedAccessViewController.m */; };
+		F06BFEB01E6599F10053B151 /* MYPStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F06BFEAB1E6599F10053B151 /* MYPStoreManager.m */; };
+		F06BFEB11E6599F10053B151 /* MYPInAppProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F06BFEAE1E6599F10053B151 /* MYPInAppProductCell.m */; };
+		F06D694D1EDD705300FB73A2 /* MYPColorPickerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06D694C1EDD705300FB73A2 /* MYPColorPickerStoryboard.storyboard */; };
+		F06D69501EDD729500FB73A2 /* MYPColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D694F1EDD729500FB73A2 /* MYPColorPickerViewController.m */; };
+		F06D96181E6D6113007C2BF5 /* MYPAvatarData.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96051E6D6113007C2BF5 /* MYPAvatarData.m */; };
+		F06D96191E6D6113007C2BF5 /* MYPBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96071E6D6113007C2BF5 /* MYPBinder.m */; };
+		F06D961A1E6D6113007C2BF5 /* MYPBinderTab.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96091E6D6113007C2BF5 /* MYPBinderTab.m */; };
+		F06D961B1E6D6113007C2BF5 /* MYPChatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D960B1E6D6113007C2BF5 /* MYPChatMessage.m */; };
+		F06D961C1E6D6113007C2BF5 /* MYPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D960D1E6D6113007C2BF5 /* MYPDocument.m */; };
+		F06D961D1E6D6113007C2BF5 /* MYPInvitedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D960F1E6D6113007C2BF5 /* MYPInvitedUser.m */; };
+		F06D961E1E6D6113007C2BF5 /* MYPNonManagedInvitedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96111E6D6113007C2BF5 /* MYPNonManagedInvitedUser.m */; };
+		F06D961F1E6D6113007C2BF5 /* MYPServiceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96131E6D6113007C2BF5 /* MYPServiceObject.m */; };
+		F06D96201E6D6113007C2BF5 /* MYPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96151E6D6113007C2BF5 /* MYPUser.m */; };
+		F06D963B1E6D84B4007C2BF5 /* MYPAlertsAwareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96381E6D84B4007C2BF5 /* MYPAlertsAwareViewController.m */; };
+		F06D963C1E6D84B4007C2BF5 /* UIViewController+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D963A1E6D84B4007C2BF5 /* UIViewController+Alerts.m */; };
+		F06D964C1E6DAB8B007C2BF5 /* MYPBinderChangedAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D963F1E6DAB8B007C2BF5 /* MYPBinderChangedAlert.m */; };
+		F06D964D1E6DAB8B007C2BF5 /* MYPChatMessageAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96411E6DAB8B007C2BF5 /* MYPChatMessageAlert.m */; };
+		F06D964E1E6DAB8B007C2BF5 /* MYPNewDocumentAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96431E6DAB8B007C2BF5 /* MYPNewDocumentAlert.m */; };
+		F06D964F1E6DAB8B007C2BF5 /* MYPNewInviteAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96451E6DAB8B007C2BF5 /* MYPNewInviteAlert.m */; };
+		F06D96501E6DAB8B007C2BF5 /* MYPNewTabAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96471E6DAB8B007C2BF5 /* MYPNewTabAlert.m */; };
+		F06D96511E6DAB8B007C2BF5 /* MYPAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D96491E6DAB8B007C2BF5 /* MYPAlert.m */; };
+		F06D96521E6DAB8B007C2BF5 /* MYPAlertsFabric.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D964B1E6DAB8B007C2BF5 /* MYPAlertsFabric.m */; };
+		F072C1A21E49D5E600D137A4 /* MYPInvitedUserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F072C19F1E49D5E600D137A4 /* MYPInvitedUserCollectionViewCell.m */; };
+		F072C1A31E49D5E600D137A4 /* MYPInvitedUsersFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F072C1A11E49D5E600D137A4 /* MYPInvitedUsersFlowLayout.m */; };
+		F072C1A81E49D5F700D137A4 /* MYPCreateBinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F072C1A51E49D5F700D137A4 /* MYPCreateBinderViewController.m */; };
+		F07346681E3F89AE0078A5B3 /* MyPlannrModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F07346661E3F89AE0078A5B3 /* MyPlannrModel.xcdatamodeld */; };
+		F07C3E5D1E5B1E0800852CDF /* MYPBinderTabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F07C3E581E5B1E0800852CDF /* MYPBinderTabsViewController.m */; };
+		F07C3E5E1E5B1E0800852CDF /* MYPBinderTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F07C3E5C1E5B1E0800852CDF /* MYPBinderTabCell.m */; };
+		F07C3E611E5B1E2400852CDF /* MYPBinderTabsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F07C3E601E5B1E2400852CDF /* MYPBinderTabsModel.m */; };
+		F07DF0921E54A11B00434F09 /* MYPBaseCreateEditBinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F07DF0911E54A11B00434F09 /* MYPBaseCreateEditBinderViewController.m */; };
+		F07FADEE1E59B228009EE044 /* MYPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F07FADED1E59B228009EE044 /* MYPTableView.m */; };
+		F07FADF11E59B276009EE044 /* FCNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = F07FADF01E59B276009EE044 /* FCNibView.m */; };
+		F08B43041E5488A5000608DD /* MYPCreateOrEditBinderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08B43021E5488A5000608DD /* MYPCreateOrEditBinderView.xib */; };
+		F08FD8A91EB61F7B0039D3C0 /* iaps_description.txt in Resources */ = {isa = PBXBuildFile; fileRef = F08FD8AB1EB61F7B0039D3C0 /* iaps_description.txt */; };
+		F09D179B1E4885F10076543C /* NSManagedObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F09D179A1E4885F10076543C /* NSManagedObject+Extensions.m */; };
+		F09D179E1E488AD70076543C /* FCManagedServiceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F09D179D1E488AD70076543C /* FCManagedServiceObject.m */; };
+		F09D17A11E488B870076543C /* FCServiceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F09D17A01E488B870076543C /* FCServiceObject.m */; };
+		F0A0E3B91DA2BCF100B2860F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05B80471D50D8D1007F227F /* LaunchScreen.storyboard */; };
+		F0A4FF791E62CD1300738B69 /* MYPChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A4FF741E62CD1300738B69 /* MYPChatViewController.m */; };
+		F0A4FF7A1E62CD1300738B69 /* MYPChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A4FF771E62CD1300738B69 /* MYPChatModel.m */; };
+		F0A8F7A71E48CF6C00E52D93 /* MYPBinderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A8F7A41E48CF6C00E52D93 /* MYPBinderCollectionViewCell.m */; };
+		F0A8F7A81E48CF6C00E52D93 /* MYPBindersFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A8F7A61E48CF6C00E52D93 /* MYPBindersFlowLayout.m */; };
+		F0A8F7AB1E48CF7C00E52D93 /* MYPBindersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A8F7AA1E48CF7C00E52D93 /* MYPBindersListViewController.m */; };
+		F0A8F7AE1E48CF9C00E52D93 /* MYPBindersListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A8F7AD1E48CF9C00E52D93 /* MYPBindersListModel.m */; };
+		F0C51DBC1E560235002CBCB5 /* NSError+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C51DBB1E560235002CBCB5 /* NSError+Extensions.m */; };
+		F0D037331DE0B78100E44FFA /* product_ids.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0D037321DE0B78100E44FFA /* product_ids.plist */; };
+		F0E0B8D41E5DBD9B00DA35FF /* MYPDocumentsPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E0B8CF1E5DBD9B00DA35FF /* MYPDocumentsPreviewViewController.m */; };
+		F0E0B8D51E5DBD9B00DA35FF /* MYPDocumentsPreviewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E0B8D31E5DBD9B00DA35FF /* MYPDocumentsPreviewLayout.m */; };
+		F0EC23A51E4A3B1200628647 /* MYPCreateBinderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EC23A41E4A3B1200628647 /* MYPCreateBinderModel.m */; };
+		F0F56D011DE2F84A00B00EBE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F56D001DE2F84A00B00EBE /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FD721658E0141C10F8D2685 /* Pods-myplannr-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myplannr-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myplannr-ios/Pods-myplannr-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		481C4E7427AEC9C79749E039 /* Pods-myplannr-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myplannr-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-myplannr-ios/Pods-myplannr-ios.release.xcconfig"; sourceTree = "<group>"; };
+		F00858841E127F3E00A86BA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPChatStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F00B37AF1E548CB400D4B2CD /* MYPCreateOrEditBinderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCreateOrEditBinderView.h; sourceTree = "<group>"; };
+		F00B37B01E548CB400D4B2CD /* MYPCreateOrEditBinderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCreateOrEditBinderView.m; sourceTree = "<group>"; };
+		F0259A731E572D3B00A6ECE2 /* MYPInviteUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPInviteUsersViewController.h; sourceTree = "<group>"; };
+		F0259A741E572D3B00A6ECE2 /* MYPInviteUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPInviteUsersViewController.m; sourceTree = "<group>"; };
+		F0259A791E57326400A6ECE2 /* MYPManageBinderUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPManageBinderUsersViewController.h; sourceTree = "<group>"; };
+		F0259A7A1E57326400A6ECE2 /* MYPManageBinderUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPManageBinderUsersViewController.m; sourceTree = "<group>"; };
+		F0259A7D1E57326400A6ECE2 /* MYPBinderUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinderUserCell.h; sourceTree = "<group>"; };
+		F0259A7E1E57326400A6ECE2 /* MYPBinderUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinderUserCell.m; sourceTree = "<group>"; };
+		F0259A811E57357C00A6ECE2 /* MYPManageBinderUsersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPManageBinderUsersModel.h; sourceTree = "<group>"; };
+		F0259A821E57357C00A6ECE2 /* MYPManageBinderUsersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPManageBinderUsersModel.m; sourceTree = "<group>"; };
+		F0259A841E573AD700A6ECE2 /* FCCollectionModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCollectionModelDelegate.h; sourceTree = "<group>"; };
+		F025A8CA1D82FA4800D6D52B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F02824B41E782ADC00788CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "myplannr-ios/Base.lproj/MYPInvitedUserCollectionViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		F02894941E6188B5005D17D1 /* FCSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSession.h; sourceTree = "<group>"; };
+		F02894951E6188B5005D17D1 /* FCSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCSession.m; sourceTree = "<group>"; };
+		F029D4F91D76D97400107689 /* myplannr-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "myplannr-ios.entitlements"; sourceTree = "<group>"; };
+		F02A97151E4F3D5600627669 /* MYPEditBinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPEditBinderViewController.h; sourceTree = "<group>"; };
+		F02A97161E4F3D5600627669 /* MYPEditBinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPEditBinderViewController.m; sourceTree = "<group>"; };
+		F02A97181E4F3D6600627669 /* MYPEditBinderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPEditBinderModel.h; sourceTree = "<group>"; };
+		F02A97191E4F3D6600627669 /* MYPEditBinderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPEditBinderModel.m; sourceTree = "<group>"; };
+		F02A971B1E4F439600627669 /* NSDateFormatter+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Extensions.h"; sourceTree = "<group>"; };
+		F02A971C1E4F439600627669 /* NSDateFormatter+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Extensions.m"; sourceTree = "<group>"; };
+		F04273151E5CAF05000D4199 /* MYPBinderTabDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinderTabDetailsController.h; sourceTree = "<group>"; };
+		F04273161E5CAF05000D4199 /* MYPBinderTabDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinderTabDetailsController.m; sourceTree = "<group>"; };
+		F04273191E5CAF05000D4199 /* MYPDocumentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPDocumentCell.h; sourceTree = "<group>"; };
+		F042731A1E5CAF05000D4199 /* MYPDocumentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPDocumentCell.m; sourceTree = "<group>"; };
+		F042731B1E5CAF05000D4199 /* MYPTooBigDocumentWarningAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPTooBigDocumentWarningAlert.h; sourceTree = "<group>"; };
+		F042731C1E5CAF05000D4199 /* MYPTooBigDocumentWarningAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPTooBigDocumentWarningAlert.m; sourceTree = "<group>"; };
+		F04273201E5CAFBF000D4199 /* MYPBinderTabDocumentsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinderTabDocumentsModel.h; sourceTree = "<group>"; };
+		F04273211E5CAFBF000D4199 /* MYPBinderTabDocumentsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinderTabDocumentsModel.m; sourceTree = "<group>"; };
+		F0479B3D1DD6447F00187A69 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		F04B7C1D1E67106B008F2F39 /* MYPFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPFileUtils.h; sourceTree = "<group>"; };
+		F04B7C1E1E67106B008F2F39 /* MYPFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPFileUtils.m; sourceTree = "<group>"; };
+		F058EFB71DF17AE000736B47 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		F058EFB81DF17AE000736B47 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		F058EFBC1DF17B1300736B47 /* MYPCardViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCardViewCell.h; sourceTree = "<group>"; };
+		F058EFBD1DF17B1300736B47 /* MYPCardViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCardViewCell.m; sourceTree = "<group>"; };
+		F058EFBF1DF17B1300736B47 /* MYPEditableCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPEditableCollectionView.h; sourceTree = "<group>"; };
+		F058EFC01DF17B1300736B47 /* MYPEditableCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPEditableCollectionView.m; sourceTree = "<group>"; };
+		F058EFC11DF17B1300736B47 /* MYPEditableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPEditableCollectionViewCell.h; sourceTree = "<group>"; };
+		F058EFC21DF17B1300736B47 /* MYPEditableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPEditableCollectionViewCell.m; sourceTree = "<group>"; };
+		F058EFC31DF17B1300736B47 /* MYPCenteredFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCenteredFlowLayout.h; sourceTree = "<group>"; };
+		F058EFC41DF17B1300736B47 /* MYPCenteredFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCenteredFlowLayout.m; sourceTree = "<group>"; };
+		F058EFC61DF17B1300736B47 /* MYPCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCardView.h; sourceTree = "<group>"; };
+		F058EFC71DF17B1300736B47 /* MYPCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCardView.m; sourceTree = "<group>"; };
+		F058EFC81DF17B1300736B47 /* MYPCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCheckbox.h; sourceTree = "<group>"; };
+		F058EFC91DF17B1300736B47 /* MYPCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCheckbox.m; sourceTree = "<group>"; };
+		F058EFCA1DF17B1300736B47 /* MYPCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCircleButton.h; sourceTree = "<group>"; };
+		F058EFCB1DF17B1300736B47 /* MYPCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCircleButton.m; sourceTree = "<group>"; };
+		F058EFCC1DF17B1300736B47 /* MYPColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPColorPickerView.h; sourceTree = "<group>"; };
+		F058EFCD1DF17B1300736B47 /* MYPColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPColorPickerView.m; sourceTree = "<group>"; };
+		F058EFCE1DF17B1300736B47 /* MYPTabTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPTabTitleView.h; sourceTree = "<group>"; };
+		F058EFCF1DF17B1300736B47 /* MYPTabTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPTabTitleView.m; sourceTree = "<group>"; };
+		F058EFD01DF17B1300736B47 /* MYPUserProfileCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPUserProfileCardView.h; sourceTree = "<group>"; };
+		F058EFD11DF17B1300736B47 /* MYPUserProfileCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPUserProfileCardView.m; sourceTree = "<group>"; };
+		F058EFD21DF17B1300736B47 /* MYPUserProfileCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYPUserProfileCardView.xib; sourceTree = "<group>"; };
+		F058EFDF1DF17BA600736B47 /* MYPStartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPStartPageViewController.h; sourceTree = "<group>"; };
+		F058EFE01DF17BA600736B47 /* MYPStartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPStartPageViewController.m; sourceTree = "<group>"; };
+		F058EFE31DF17BFD00736B47 /* MYPSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPSignInViewController.h; sourceTree = "<group>"; };
+		F058EFE41DF17BFD00736B47 /* MYPSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPSignInViewController.m; sourceTree = "<group>"; };
+		F058EFE71DF17C4E00736B47 /* MYPSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPSignUpViewController.h; sourceTree = "<group>"; };
+		F058EFE81DF17C4E00736B47 /* MYPSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPSignUpViewController.m; sourceTree = "<group>"; };
+		F058EFEB1DF17C5F00736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058EFEE1DF17C7000736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPSignInStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058EFF11DF17C7B00736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPSignUpStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058EFF41DF17CB400736B47 /* MYPRecoverPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPRecoverPasswordViewController.h; sourceTree = "<group>"; };
+		F058EFF51DF17CB400736B47 /* MYPRecoverPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPRecoverPasswordViewController.m; sourceTree = "<group>"; };
+		F058EFF81DF17CBD00736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPRecoverPasswordStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058EFFB1DF17D3500736B47 /* MYPCompleteRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCompleteRegistrationViewController.h; sourceTree = "<group>"; };
+		F058EFFC1DF17D3500736B47 /* MYPCompleteRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCompleteRegistrationViewController.m; sourceTree = "<group>"; };
+		F058EFFF1DF17D3E00736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPCompleteRegistrationStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F00C1DF17D8000736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "myplannr-ios/Base.lproj/MYPBinderCollectionViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		F058F00F1DF17D8800736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPBindersListStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F0221DF17DF700736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPCreateBinderStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F0291DF17E3300736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPEditBinderStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F0301DF17E5A00736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPInviteUsersStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F03A1DF17E8700736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPManageBinderUsersStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F0441DF17EC500736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "myplannr-ios/Base.lproj/MYPBinderTabCell.xib"; sourceTree = SOURCE_ROOT; };
+		F058F0461DF17EC500736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPBinderTabsStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F05B1DF17F3F00736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPBinderTabDetailsStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F05D1DF17F3F00736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "myplannr-ios/Base.lproj/MYPDocumentCell.xib"; sourceTree = SOURCE_ROOT; };
+		F058F0681DF17FBD00736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPDocumentsPreviewStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F06F1DF17FF600736B47 /* MYPBinderPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinderPickerViewController.h; sourceTree = "<group>"; };
+		F058F0701DF17FF600736B47 /* MYPBinderPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinderPickerViewController.m; sourceTree = "<group>"; };
+		F058F0731DF1800000736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPBinderPickerStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F0761DF1802300736B47 /* MYPTabPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPTabPickerViewController.h; sourceTree = "<group>"; };
+		F058F0771DF1802300736B47 /* MYPTabPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPTabPickerViewController.m; sourceTree = "<group>"; };
+		F058F07A1DF1802C00736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPTabPickerStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F0871DF1805500736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPGetUnlimitedAccessStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F08A1DF1808600736B47 /* MYPSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPSettingsViewController.h; sourceTree = "<group>"; };
+		F058F08B1DF1808600736B47 /* MYPSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPSettingsViewController.m; sourceTree = "<group>"; };
+		F058F08E1DF1809000736B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPSettingsStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F058F0921DF180AB00736B47 /* FCNetworkServiceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCNetworkServiceBase.h; sourceTree = "<group>"; };
+		F058F0931DF180AB00736B47 /* FCNetworkServiceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCNetworkServiceBase.m; sourceTree = "<group>"; };
+		F058F0941DF180AB00736B47 /* FCObjectWithMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCObjectWithMapping.h; sourceTree = "<group>"; };
+		F058F0971DF180AB00736B47 /* MYPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPService.h; sourceTree = "<group>"; };
+		F058F0981DF180AB00736B47 /* MYPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPService.m; sourceTree = "<group>"; };
+		F058F0A81DF180AB00736B47 /* RKValueTransformer+Extenstions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RKValueTransformer+Extenstions.h"; sourceTree = "<group>"; };
+		F058F0A91DF180AB00736B47 /* RKValueTransformer+Extenstions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RKValueTransformer+Extenstions.m"; sourceTree = "<group>"; };
+		F058F0B61DF180BE00736B47 /* MYPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPConstants.h; sourceTree = "<group>"; };
+		F058F0B71DF180BE00736B47 /* MYPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPConstants.m; sourceTree = "<group>"; };
+		F058F0B81DF180BE00736B47 /* MYPDevicePropertiesUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPDevicePropertiesUtils.h; sourceTree = "<group>"; };
+		F058F0B91DF180BE00736B47 /* MYPDocumentPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPDocumentPicker.h; sourceTree = "<group>"; };
+		F058F0BA1DF180BE00736B47 /* MYPDocumentPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPDocumentPicker.m; sourceTree = "<group>"; };
+		F058F0BB1DF180BE00736B47 /* MYPFilesDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPFilesDownloader.h; sourceTree = "<group>"; };
+		F058F0BC1DF180BE00736B47 /* MYPFilesDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPFilesDownloader.m; sourceTree = "<group>"; };
+		F058F0BD1DF180BE00736B47 /* MYPUserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPUserProfile.h; sourceTree = "<group>"; };
+		F058F0BE1DF180BE00736B47 /* MYPUserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPUserProfile.m; sourceTree = "<group>"; };
+		F058F0BF1DF180BE00736B47 /* MYPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPUtils.h; sourceTree = "<group>"; };
+		F058F0C01DF180BE00736B47 /* MYPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPUtils.m; sourceTree = "<group>"; };
+		F058F0C11DF180BE00736B47 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
+		F058F0C21DF180BE00736B47 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		F058F0C31DF180BE00736B47 /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		F058F0C41DF180BE00736B47 /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
+		F058F0C51DF180BE00736B47 /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		F058F0C61DF180BF00736B47 /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		F058F0C71DF180BF00736B47 /* UIImageView+Letters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Letters.h"; sourceTree = "<group>"; };
+		F058F0C81DF180BF00736B47 /* UIImageView+Letters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Letters.m"; sourceTree = "<group>"; };
+		F05B80361D50D8D1007F227F /* myplannr-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "myplannr-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05B803A1D50D8D1007F227F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F05B80451D50D8D1007F227F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F05B80481D50D8D1007F227F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F05B804A1D50D8D1007F227F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06738731E5B127A00E9739B /* MYPCreateOrEditTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCreateOrEditTabViewController.h; sourceTree = "<group>"; };
+		F06738741E5B127A00E9739B /* MYPCreateOrEditTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCreateOrEditTabViewController.m; sourceTree = "<group>"; };
+		F06738761E5B127A00E9739B /* MYPCreateOrEditTabModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCreateOrEditTabModel.h; sourceTree = "<group>"; };
+		F06738771E5B127A00E9739B /* MYPCreateOrEditTabModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCreateOrEditTabModel.m; sourceTree = "<group>"; };
+		F067387F1E5B135400E9739B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "myplannr-ios/Base.lproj/MYPCreateOrEditTabStoryboard.storyboard"; sourceTree = SOURCE_ROOT; };
+		F06BFEA71E6599F10053B151 /* MYPGetUnlimitedAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPGetUnlimitedAccessViewController.h; sourceTree = "<group>"; };
+		F06BFEA81E6599F10053B151 /* MYPGetUnlimitedAccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPGetUnlimitedAccessViewController.m; sourceTree = "<group>"; };
+		F06BFEAA1E6599F10053B151 /* MYPStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPStoreManager.h; sourceTree = "<group>"; };
+		F06BFEAB1E6599F10053B151 /* MYPStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPStoreManager.m; sourceTree = "<group>"; };
+		F06BFEAD1E6599F10053B151 /* MYPInAppProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPInAppProductCell.h; sourceTree = "<group>"; };
+		F06BFEAE1E6599F10053B151 /* MYPInAppProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPInAppProductCell.m; sourceTree = "<group>"; };
+		F06D694C1EDD705300FB73A2 /* MYPColorPickerStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MYPColorPickerStoryboard.storyboard; sourceTree = "<group>"; };
+		F06D694E1EDD729500FB73A2 /* MYPColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPColorPickerViewController.h; sourceTree = "<group>"; };
+		F06D694F1EDD729500FB73A2 /* MYPColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPColorPickerViewController.m; sourceTree = "<group>"; };
+		F06D96041E6D6113007C2BF5 /* MYPAvatarData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPAvatarData.h; sourceTree = "<group>"; };
+		F06D96051E6D6113007C2BF5 /* MYPAvatarData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPAvatarData.m; sourceTree = "<group>"; };
+		F06D96061E6D6113007C2BF5 /* MYPBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinder.h; sourceTree = "<group>"; };
+		F06D96071E6D6113007C2BF5 /* MYPBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinder.m; sourceTree = "<group>"; };
+		F06D96081E6D6113007C2BF5 /* MYPBinderTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinderTab.h; sourceTree = "<group>"; };
+		F06D96091E6D6113007C2BF5 /* MYPBinderTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinderTab.m; sourceTree = "<group>"; };
+		F06D960A1E6D6113007C2BF5 /* MYPChatMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPChatMessage.h; sourceTree = "<group>"; };
+		F06D960B1E6D6113007C2BF5 /* MYPChatMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPChatMessage.m; sourceTree = "<group>"; };
+		F06D960C1E6D6113007C2BF5 /* MYPDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPDocument.h; sourceTree = "<group>"; };
+		F06D960D1E6D6113007C2BF5 /* MYPDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPDocument.m; sourceTree = "<group>"; };
+		F06D960E1E6D6113007C2BF5 /* MYPInvitedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPInvitedUser.h; sourceTree = "<group>"; };
+		F06D960F1E6D6113007C2BF5 /* MYPInvitedUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPInvitedUser.m; sourceTree = "<group>"; };
+		F06D96101E6D6113007C2BF5 /* MYPNonManagedInvitedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPNonManagedInvitedUser.h; sourceTree = "<group>"; };
+		F06D96111E6D6113007C2BF5 /* MYPNonManagedInvitedUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPNonManagedInvitedUser.m; sourceTree = "<group>"; };
+		F06D96121E6D6113007C2BF5 /* MYPServiceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPServiceObject.h; sourceTree = "<group>"; };
+		F06D96131E6D6113007C2BF5 /* MYPServiceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPServiceObject.m; sourceTree = "<group>"; };
+		F06D96141E6D6113007C2BF5 /* MYPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPUser.h; sourceTree = "<group>"; };
+		F06D96151E6D6113007C2BF5 /* MYPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPUser.m; sourceTree = "<group>"; };
+		F06D96161E6D6113007C2BF5 /* MYPUserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPUserProtocol.h; sourceTree = "<group>"; };
+		F06D96371E6D84B4007C2BF5 /* MYPAlertsAwareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPAlertsAwareViewController.h; sourceTree = "<group>"; };
+		F06D96381E6D84B4007C2BF5 /* MYPAlertsAwareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPAlertsAwareViewController.m; sourceTree = "<group>"; };
+		F06D96391E6D84B4007C2BF5 /* UIViewController+Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alerts.h"; sourceTree = "<group>"; };
+		F06D963A1E6D84B4007C2BF5 /* UIViewController+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alerts.m"; sourceTree = "<group>"; };
+		F06D963E1E6DAB8B007C2BF5 /* MYPBinderChangedAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinderChangedAlert.h; sourceTree = "<group>"; };
+		F06D963F1E6DAB8B007C2BF5 /* MYPBinderChangedAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinderChangedAlert.m; sourceTree = "<group>"; };
+		F06D96401E6DAB8B007C2BF5 /* MYPChatMessageAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPChatMessageAlert.h; sourceTree = "<group>"; };
+		F06D96411E6DAB8B007C2BF5 /* MYPChatMessageAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPChatMessageAlert.m; sourceTree = "<group>"; };
+		F06D96421E6DAB8B007C2BF5 /* MYPNewDocumentAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPNewDocumentAlert.h; sourceTree = "<group>"; };
+		F06D96431E6DAB8B007C2BF5 /* MYPNewDocumentAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPNewDocumentAlert.m; sourceTree = "<group>"; };
+		F06D96441E6DAB8B007C2BF5 /* MYPNewInviteAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPNewInviteAlert.h; sourceTree = "<group>"; };
+		F06D96451E6DAB8B007C2BF5 /* MYPNewInviteAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPNewInviteAlert.m; sourceTree = "<group>"; };
+		F06D96461E6DAB8B007C2BF5 /* MYPNewTabAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPNewTabAlert.h; sourceTree = "<group>"; };
+		F06D96471E6DAB8B007C2BF5 /* MYPNewTabAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPNewTabAlert.m; sourceTree = "<group>"; };
+		F06D96481E6DAB8B007C2BF5 /* MYPAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPAlert.h; sourceTree = "<group>"; };
+		F06D96491E6DAB8B007C2BF5 /* MYPAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPAlert.m; sourceTree = "<group>"; };
+		F06D964A1E6DAB8B007C2BF5 /* MYPAlertsFabric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPAlertsFabric.h; sourceTree = "<group>"; };
+		F06D964B1E6DAB8B007C2BF5 /* MYPAlertsFabric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPAlertsFabric.m; sourceTree = "<group>"; };
+		F072C19E1E49D5E600D137A4 /* MYPInvitedUserCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPInvitedUserCollectionViewCell.h; sourceTree = "<group>"; };
+		F072C19F1E49D5E600D137A4 /* MYPInvitedUserCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPInvitedUserCollectionViewCell.m; sourceTree = "<group>"; };
+		F072C1A01E49D5E600D137A4 /* MYPInvitedUsersFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPInvitedUsersFlowLayout.h; sourceTree = "<group>"; };
+		F072C1A11E49D5E600D137A4 /* MYPInvitedUsersFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPInvitedUsersFlowLayout.m; sourceTree = "<group>"; };
+		F072C1A41E49D5F700D137A4 /* MYPCreateBinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCreateBinderViewController.h; sourceTree = "<group>"; };
+		F072C1A51E49D5F700D137A4 /* MYPCreateBinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCreateBinderViewController.m; sourceTree = "<group>"; };
+		F07346671E3F89AE0078A5B3 /* MyPlannrModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyPlannrModel.xcdatamodel; sourceTree = "<group>"; };
+		F07C3E571E5B1E0800852CDF /* MYPBinderTabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinderTabsViewController.h; sourceTree = "<group>"; };
+		F07C3E581E5B1E0800852CDF /* MYPBinderTabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinderTabsViewController.m; sourceTree = "<group>"; };
+		F07C3E5B1E5B1E0800852CDF /* MYPBinderTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinderTabCell.h; sourceTree = "<group>"; };
+		F07C3E5C1E5B1E0800852CDF /* MYPBinderTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinderTabCell.m; sourceTree = "<group>"; };
+		F07C3E5F1E5B1E2400852CDF /* MYPBinderTabsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinderTabsModel.h; sourceTree = "<group>"; };
+		F07C3E601E5B1E2400852CDF /* MYPBinderTabsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinderTabsModel.m; sourceTree = "<group>"; };
+		F07DF0901E54A11B00434F09 /* MYPBaseCreateEditBinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBaseCreateEditBinderViewController.h; sourceTree = "<group>"; };
+		F07DF0911E54A11B00434F09 /* MYPBaseCreateEditBinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBaseCreateEditBinderViewController.m; sourceTree = "<group>"; };
+		F07FADEC1E59B228009EE044 /* MYPTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPTableView.h; sourceTree = "<group>"; };
+		F07FADED1E59B228009EE044 /* MYPTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPTableView.m; sourceTree = "<group>"; };
+		F07FADEF1E59B276009EE044 /* FCNibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCNibView.h; sourceTree = "<group>"; };
+		F07FADF01E59B276009EE044 /* FCNibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCNibView.m; sourceTree = "<group>"; };
+		F08B43031E5488A5000608DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "myplannr-ios/Base.lproj/MYPCreateOrEditBinderView.xib"; sourceTree = SOURCE_ROOT; };
+		F08FD8AA1EB61F7B0039D3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = Base.lproj/iaps_description.txt; sourceTree = "<group>"; };
+		F09D17991E4885F10076543C /* NSManagedObject+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Extensions.h"; sourceTree = "<group>"; };
+		F09D179A1E4885F10076543C /* NSManagedObject+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Extensions.m"; sourceTree = "<group>"; };
+		F09D179C1E488AD70076543C /* FCManagedServiceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCManagedServiceObject.h; sourceTree = "<group>"; };
+		F09D179D1E488AD70076543C /* FCManagedServiceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCManagedServiceObject.m; sourceTree = "<group>"; };
+		F09D179F1E488B870076543C /* FCServiceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCServiceObject.h; sourceTree = "<group>"; };
+		F09D17A01E488B870076543C /* FCServiceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCServiceObject.m; sourceTree = "<group>"; };
+		F0A4FF731E62CD1300738B69 /* MYPChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPChatViewController.h; sourceTree = "<group>"; };
+		F0A4FF741E62CD1300738B69 /* MYPChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPChatViewController.m; sourceTree = "<group>"; };
+		F0A4FF761E62CD1300738B69 /* MYPChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPChatModel.h; sourceTree = "<group>"; };
+		F0A4FF771E62CD1300738B69 /* MYPChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPChatModel.m; sourceTree = "<group>"; };
+		F0A8F7A31E48CF6C00E52D93 /* MYPBinderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBinderCollectionViewCell.h; sourceTree = "<group>"; };
+		F0A8F7A41E48CF6C00E52D93 /* MYPBinderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBinderCollectionViewCell.m; sourceTree = "<group>"; };
+		F0A8F7A51E48CF6C00E52D93 /* MYPBindersFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBindersFlowLayout.h; sourceTree = "<group>"; };
+		F0A8F7A61E48CF6C00E52D93 /* MYPBindersFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBindersFlowLayout.m; sourceTree = "<group>"; };
+		F0A8F7A91E48CF7C00E52D93 /* MYPBindersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBindersListViewController.h; sourceTree = "<group>"; };
+		F0A8F7AA1E48CF7C00E52D93 /* MYPBindersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBindersListViewController.m; sourceTree = "<group>"; };
+		F0A8F7AC1E48CF9C00E52D93 /* MYPBindersListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPBindersListModel.h; sourceTree = "<group>"; };
+		F0A8F7AD1E48CF9C00E52D93 /* MYPBindersListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPBindersListModel.m; sourceTree = "<group>"; };
+		F0AD176E1E44E9170090C10B /* FCManagedObjectWithMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCManagedObjectWithMapping.h; sourceTree = "<group>"; };
+		F0C51DBA1E560235002CBCB5 /* NSError+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Extensions.h"; sourceTree = "<group>"; };
+		F0C51DBB1E560235002CBCB5 /* NSError+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Extensions.m"; sourceTree = "<group>"; };
+		F0D037321DE0B78100E44FFA /* product_ids.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = product_ids.plist; sourceTree = "<group>"; };
+		F0E0B8CE1E5DBD9B00DA35FF /* MYPDocumentsPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPDocumentsPreviewViewController.h; sourceTree = "<group>"; };
+		F0E0B8CF1E5DBD9B00DA35FF /* MYPDocumentsPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPDocumentsPreviewViewController.m; sourceTree = "<group>"; };
+		F0E0B8D21E5DBD9B00DA35FF /* MYPDocumentsPreviewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPDocumentsPreviewLayout.h; sourceTree = "<group>"; };
+		F0E0B8D31E5DBD9B00DA35FF /* MYPDocumentsPreviewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPDocumentsPreviewLayout.m; sourceTree = "<group>"; };
+		F0EC23A31E4A3B1200628647 /* MYPCreateBinderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPCreateBinderModel.h; sourceTree = "<group>"; };
+		F0EC23A41E4A3B1200628647 /* MYPCreateBinderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPCreateBinderModel.m; sourceTree = "<group>"; };
+		F0F56D001DE2F84A00B00EBE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F91FCD714F36CA7CE4C41F1C /* libPods-myplannr-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myplannr-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F05B80331D50D8D1007F227F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0F56D011DE2F84A00B00EBE /* StoreKit.framework in Frameworks */,
+				F0479B3E1DD6447F00187A69 /* QuickLook.framework in Frameworks */,
+				36B9DAF1AA773F22F860B171 /* libPods-myplannr-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B449C2533AF2F4F28DE27BEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FD721658E0141C10F8D2685 /* Pods-myplannr-ios.debug.xcconfig */,
+				481C4E7427AEC9C79749E039 /* Pods-myplannr-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDEC6F229ECB1C7940A44545 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0F56D001DE2F84A00B00EBE /* StoreKit.framework */,
+				F0479B3D1DD6447F00187A69 /* QuickLook.framework */,
+				F91FCD714F36CA7CE4C41F1C /* libPods-myplannr-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F00858821E127EF300A86BA0 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F0A4FF751E62CD1300738B69 /* Model */,
+				F0A4FF781E62CD1300738B69 /* View */,
+				F0A4FF721E62CD1300738B69 /* Controller */,
+			);
+			name = Chat;
+			path = Classes/Chat;
+			sourceTree = "<group>";
+		};
+		F0259A721E572D3B00A6ECE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F0259A731E572D3B00A6ECE2 /* MYPInviteUsersViewController.h */,
+				F0259A741E572D3B00A6ECE2 /* MYPInviteUsersViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0259A761E572D3B00A6ECE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F058F02F1DF17E5A00736B47 /* MYPInviteUsersStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0259A781E57326400A6ECE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F0259A791E57326400A6ECE2 /* MYPManageBinderUsersViewController.h */,
+				F0259A7A1E57326400A6ECE2 /* MYPManageBinderUsersViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0259A7B1E57326400A6ECE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0259A811E57357C00A6ECE2 /* MYPManageBinderUsersModel.h */,
+				F0259A821E57357C00A6ECE2 /* MYPManageBinderUsersModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0259A7C1E57326400A6ECE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0391DF17E8700736B47 /* MYPManageBinderUsersStoryboard.storyboard */,
+				F0259A7D1E57326400A6ECE2 /* MYPBinderUserCell.h */,
+				F0259A7E1E57326400A6ECE2 /* MYPBinderUserCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F02A97121E4F3CF700627669 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F02A97151E4F3D5600627669 /* MYPEditBinderViewController.h */,
+				F02A97161E4F3D5600627669 /* MYPEditBinderViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F02A97131E4F3CF700627669 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F02A97181E4F3D6600627669 /* MYPEditBinderModel.h */,
+				F02A97191E4F3D6600627669 /* MYPEditBinderModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F02A97141E4F3CF700627669 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0281DF17E3300736B47 /* MYPEditBinderStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F04273141E5CAF05000D4199 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F04273151E5CAF05000D4199 /* MYPBinderTabDetailsController.h */,
+				F04273161E5CAF05000D4199 /* MYPBinderTabDetailsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F04273171E5CAF05000D4199 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F04273201E5CAFBF000D4199 /* MYPBinderTabDocumentsModel.h */,
+				F04273211E5CAFBF000D4199 /* MYPBinderTabDocumentsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F04273181E5CAF05000D4199 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F058F05A1DF17F3F00736B47 /* MYPBinderTabDetailsStoryboard.storyboard */,
+				F058F05C1DF17F3F00736B47 /* MYPDocumentCell.xib */,
+				F04273191E5CAF05000D4199 /* MYPDocumentCell.h */,
+				F042731A1E5CAF05000D4199 /* MYPDocumentCell.m */,
+				F042731B1E5CAF05000D4199 /* MYPTooBigDocumentWarningAlert.h */,
+				F042731C1E5CAF05000D4199 /* MYPTooBigDocumentWarningAlert.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F058EFBA1DF17B1300736B47 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F06D96361E6D84B4007C2BF5 /* AlertAwareController */,
+				F058EFBB1DF17B1300736B47 /* Cells */,
+				F058EFBE1DF17B1300736B47 /* EditableCollectionView */,
+				F058EFC51DF17B1300736B47 /* Views */,
+				F058EFC31DF17B1300736B47 /* MYPCenteredFlowLayout.h */,
+				F058EFC41DF17B1300736B47 /* MYPCenteredFlowLayout.m */,
+				F0259A841E573AD700A6ECE2 /* FCCollectionModelDelegate.h */,
+			);
+			name = Base;
+			path = Classes/Base;
+			sourceTree = "<group>";
+		};
+		F058EFBB1DF17B1300736B47 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F058EFBC1DF17B1300736B47 /* MYPCardViewCell.h */,
+				F058EFBD1DF17B1300736B47 /* MYPCardViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F058EFBE1DF17B1300736B47 /* EditableCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F058EFBF1DF17B1300736B47 /* MYPEditableCollectionView.h */,
+				F058EFC01DF17B1300736B47 /* MYPEditableCollectionView.m */,
+				F058EFC11DF17B1300736B47 /* MYPEditableCollectionViewCell.h */,
+				F058EFC21DF17B1300736B47 /* MYPEditableCollectionViewCell.m */,
+			);
+			path = EditableCollectionView;
+			sourceTree = "<group>";
+		};
+		F058EFC51DF17B1300736B47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F07FADEC1E59B228009EE044 /* MYPTableView.h */,
+				F07FADED1E59B228009EE044 /* MYPTableView.m */,
+				F058EFC61DF17B1300736B47 /* MYPCardView.h */,
+				F058EFC71DF17B1300736B47 /* MYPCardView.m */,
+				F058EFC81DF17B1300736B47 /* MYPCheckbox.h */,
+				F058EFC91DF17B1300736B47 /* MYPCheckbox.m */,
+				F058EFCA1DF17B1300736B47 /* MYPCircleButton.h */,
+				F058EFCB1DF17B1300736B47 /* MYPCircleButton.m */,
+				F058EFCC1DF17B1300736B47 /* MYPColorPickerView.h */,
+				F058EFCD1DF17B1300736B47 /* MYPColorPickerView.m */,
+				F058EFCE1DF17B1300736B47 /* MYPTabTitleView.h */,
+				F058EFCF1DF17B1300736B47 /* MYPTabTitleView.m */,
+				F058EFD21DF17B1300736B47 /* MYPUserProfileCardView.xib */,
+				F058EFD01DF17B1300736B47 /* MYPUserProfileCardView.h */,
+				F058EFD11DF17B1300736B47 /* MYPUserProfileCardView.m */,
+				F07FADEF1E59B276009EE044 /* FCNibView.h */,
+				F07FADF01E59B276009EE044 /* FCNibView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F058EFDE1DF17BA600736B47 /* StartPage */ = {
+			isa = PBXGroup;
+			children = (
+				F058EFEA1DF17C5F00736B47 /* Main.storyboard */,
+				F058EFDF1DF17BA600736B47 /* MYPStartPageViewController.h */,
+				F058EFE01DF17BA600736B47 /* MYPStartPageViewController.m */,
+			);
+			name = StartPage;
+			path = Classes/StartPage;
+			sourceTree = "<group>";
+		};
+		F058EFE21DF17BFD00736B47 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				F058EFED1DF17C7000736B47 /* MYPSignInStoryboard.storyboard */,
+				F058EFE31DF17BFD00736B47 /* MYPSignInViewController.h */,
+				F058EFE41DF17BFD00736B47 /* MYPSignInViewController.m */,
+			);
+			name = SignIn;
+			path = Classes/SignIn;
+			sourceTree = "<group>";
+		};
+		F058EFE61DF17C4E00736B47 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F058EFF01DF17C7B00736B47 /* MYPSignUpStoryboard.storyboard */,
+				F058EFE71DF17C4E00736B47 /* MYPSignUpViewController.h */,
+				F058EFE81DF17C4E00736B47 /* MYPSignUpViewController.m */,
+			);
+			name = SignUp;
+			path = Classes/SignUp;
+			sourceTree = "<group>";
+		};
+		F058EFF31DF17CB400736B47 /* RecoverPassword */ = {
+			isa = PBXGroup;
+			children = (
+				F058EFF71DF17CBD00736B47 /* MYPRecoverPasswordStoryboard.storyboard */,
+				F058EFF41DF17CB400736B47 /* MYPRecoverPasswordViewController.h */,
+				F058EFF51DF17CB400736B47 /* MYPRecoverPasswordViewController.m */,
+			);
+			name = RecoverPassword;
+			path = Classes/RecoverPassword;
+			sourceTree = "<group>";
+		};
+		F058EFFA1DF17D3500736B47 /* CompleteRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				F058EFFE1DF17D3E00736B47 /* MYPCompleteRegistrationStoryboard.storyboard */,
+				F058EFFB1DF17D3500736B47 /* MYPCompleteRegistrationViewController.h */,
+				F058EFFC1DF17D3500736B47 /* MYPCompleteRegistrationViewController.m */,
+			);
+			name = CompleteRegistration;
+			path = Classes/CompleteRegistration;
+			sourceTree = "<group>";
+		};
+		F058F0011DF17D7600736B47 /* BindersList */ = {
+			isa = PBXGroup;
+			children = (
+				F0A8F7A11E48CF2B00E52D93 /* Model */,
+				F0A8F7A21E48CF2B00E52D93 /* View */,
+				F0A8F7A01E48CF2B00E52D93 /* Controller */,
+			);
+			name = BindersList;
+			path = Classes/BindersList;
+			sourceTree = "<group>";
+		};
+		F058F0111DF17DDD00736B47 /* CreateBinder */ = {
+			isa = PBXGroup;
+			children = (
+				F072C19C1E49D57900D137A4 /* Model */,
+				F072C19D1E49D57900D137A4 /* View */,
+				F072C19B1E49D57900D137A4 /* Controller */,
+			);
+			name = CreateBinder;
+			path = Classes/CreateBinder;
+			sourceTree = "<group>";
+		};
+		F058F0241DF17E2A00736B47 /* EditBinder */ = {
+			isa = PBXGroup;
+			children = (
+				F02A97131E4F3CF700627669 /* Model */,
+				F02A97141E4F3CF700627669 /* View */,
+				F02A97121E4F3CF700627669 /* Controller */,
+			);
+			name = EditBinder;
+			path = Classes/EditBinder;
+			sourceTree = "<group>";
+		};
+		F058F02B1DF17E5000736B47 /* InviteUsers */ = {
+			isa = PBXGroup;
+			children = (
+				F0259A761E572D3B00A6ECE2 /* View */,
+				F0259A721E572D3B00A6ECE2 /* Controller */,
+			);
+			name = InviteUsers;
+			path = Classes/InviteUsers;
+			sourceTree = "<group>";
+		};
+		F058F0321DF17E7C00736B47 /* ManageBinderUsers */ = {
+			isa = PBXGroup;
+			children = (
+				F0259A7B1E57326400A6ECE2 /* Model */,
+				F0259A7C1E57326400A6ECE2 /* View */,
+				F0259A781E57326400A6ECE2 /* Controller */,
+			);
+			name = ManageBinderUsers;
+			path = Classes/ManageBinderUsers;
+			sourceTree = "<group>";
+		};
+		F058F03C1DF17EBA00736B47 /* BinderTabs */ = {
+			isa = PBXGroup;
+			children = (
+				F07C3E591E5B1E0800852CDF /* Model */,
+				F07C3E5A1E5B1E0800852CDF /* View */,
+				F07C3E561E5B1E0800852CDF /* Controller */,
+			);
+			name = BinderTabs;
+			path = Classes/BinderTabs;
+			sourceTree = "<group>";
+		};
+		F058F0501DF17F3400736B47 /* BinderTabDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F04273171E5CAF05000D4199 /* Model */,
+				F04273181E5CAF05000D4199 /* View */,
+				F04273141E5CAF05000D4199 /* Controller */,
+			);
+			name = BinderTabDetails;
+			path = Classes/BinderTabDetails;
+			sourceTree = "<group>";
+		};
+		F058F0601DF17FB000736B47 /* DocumentsPreview */ = {
+			isa = PBXGroup;
+			children = (
+				F0E0B8D11E5DBD9B00DA35FF /* View */,
+				F0E0B8CD1E5DBD9B00DA35FF /* Controller */,
+			);
+			name = DocumentsPreview;
+			path = Classes/DocumentsPreview;
+			sourceTree = "<group>";
+		};
+		F058F06E1DF17FF600736B47 /* BinderPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0721DF1800000736B47 /* MYPBinderPickerStoryboard.storyboard */,
+				F058F06F1DF17FF600736B47 /* MYPBinderPickerViewController.h */,
+				F058F0701DF17FF600736B47 /* MYPBinderPickerViewController.m */,
+			);
+			name = BinderPicker;
+			path = Classes/BinderPicker;
+			sourceTree = "<group>";
+		};
+		F058F0751DF1802300736B47 /* TabPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0791DF1802C00736B47 /* MYPTabPickerStoryboard.storyboard */,
+				F058F0761DF1802300736B47 /* MYPTabPickerViewController.h */,
+				F058F0771DF1802300736B47 /* MYPTabPickerViewController.m */,
+			);
+			name = TabPicker;
+			path = Classes/TabPicker;
+			sourceTree = "<group>";
+		};
+		F058F07C1DF1804800736B47 /* GetUnlimitedAccess */ = {
+			isa = PBXGroup;
+			children = (
+				F06BFEA91E6599F10053B151 /* Model */,
+				F06BFEAC1E6599F10053B151 /* View */,
+				F06BFEA61E6599F10053B151 /* Controller */,
+			);
+			name = GetUnlimitedAccess;
+			path = Classes/GetUnlimitedAccess;
+			sourceTree = "<group>";
+		};
+		F058F0891DF1808600736B47 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F058F08D1DF1809000736B47 /* MYPSettingsStoryboard.storyboard */,
+				F058F08A1DF1808600736B47 /* MYPSettingsViewController.h */,
+				F058F08B1DF1808600736B47 /* MYPSettingsViewController.m */,
+			);
+			name = Settings;
+			path = Classes/Settings;
+			sourceTree = "<group>";
+		};
+		F058F0901DF180AB00736B47 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0911DF180AB00736B47 /* Base */,
+				F058F0971DF180AB00736B47 /* MYPService.h */,
+				F058F0981DF180AB00736B47 /* MYPService.m */,
+				F058F0A81DF180AB00736B47 /* RKValueTransformer+Extenstions.h */,
+				F058F0A91DF180AB00736B47 /* RKValueTransformer+Extenstions.m */,
+			);
+			name = Services;
+			path = Classes/Services;
+			sourceTree = "<group>";
+		};
+		F058F0911DF180AB00736B47 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0921DF180AB00736B47 /* FCNetworkServiceBase.h */,
+				F058F0931DF180AB00736B47 /* FCNetworkServiceBase.m */,
+				F058F0941DF180AB00736B47 /* FCObjectWithMapping.h */,
+				F0AD176E1E44E9170090C10B /* FCManagedObjectWithMapping.h */,
+				F09D179F1E488B870076543C /* FCServiceObject.h */,
+				F09D17A01E488B870076543C /* FCServiceObject.m */,
+				F09D179C1E488AD70076543C /* FCManagedServiceObject.h */,
+				F09D179D1E488AD70076543C /* FCManagedServiceObject.m */,
+				F02894941E6188B5005D17D1 /* FCSession.h */,
+				F02894951E6188B5005D17D1 /* FCSession.m */,
+				F09D17991E4885F10076543C /* NSManagedObject+Extensions.h */,
+				F09D179A1E4885F10076543C /* NSManagedObject+Extensions.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F058F0B51DF180BE00736B47 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0B61DF180BE00736B47 /* MYPConstants.h */,
+				F058F0B71DF180BE00736B47 /* MYPConstants.m */,
+				F058F0B81DF180BE00736B47 /* MYPDevicePropertiesUtils.h */,
+				F058F0B91DF180BE00736B47 /* MYPDocumentPicker.h */,
+				F058F0BA1DF180BE00736B47 /* MYPDocumentPicker.m */,
+				F058F0BB1DF180BE00736B47 /* MYPFilesDownloader.h */,
+				F058F0BC1DF180BE00736B47 /* MYPFilesDownloader.m */,
+				F058F0BD1DF180BE00736B47 /* MYPUserProfile.h */,
+				F058F0BE1DF180BE00736B47 /* MYPUserProfile.m */,
+				F058F0BF1DF180BE00736B47 /* MYPUtils.h */,
+				F058F0C01DF180BE00736B47 /* MYPUtils.m */,
+				F04B7C1D1E67106B008F2F39 /* MYPFileUtils.h */,
+				F04B7C1E1E67106B008F2F39 /* MYPFileUtils.m */,
+				F058F0C11DF180BE00736B47 /* NSString+Utilities.h */,
+				F058F0C21DF180BE00736B47 /* NSString+Utilities.m */,
+				F058F0C31DF180BE00736B47 /* UIColor+Extensions.h */,
+				F058F0C41DF180BE00736B47 /* UIColor+Extensions.m */,
+				F058F0C51DF180BE00736B47 /* UIImage+Extensions.h */,
+				F058F0C61DF180BF00736B47 /* UIImage+Extensions.m */,
+				F058F0C71DF180BF00736B47 /* UIImageView+Letters.h */,
+				F058F0C81DF180BF00736B47 /* UIImageView+Letters.m */,
+				F02A971B1E4F439600627669 /* NSDateFormatter+Extensions.h */,
+				F02A971C1E4F439600627669 /* NSDateFormatter+Extensions.m */,
+				F0C51DBA1E560235002CBCB5 /* NSError+Extensions.h */,
+				F0C51DBB1E560235002CBCB5 /* NSError+Extensions.m */,
+			);
+			name = Utils;
+			path = Classes/Utils;
+			sourceTree = "<group>";
+		};
+		F05B802D1D50D8D1007F227F = {
+			isa = PBXGroup;
+			children = (
+				F05B80381D50D8D1007F227F /* myplannr-ios */,
+				F05B80371D50D8D1007F227F /* Products */,
+				B449C2533AF2F4F28DE27BEA /* Pods */,
+				DDEC6F229ECB1C7940A44545 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F05B80371D50D8D1007F227F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F05B80361D50D8D1007F227F /* myplannr-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F05B80381D50D8D1007F227F /* myplannr-ios */ = {
+			isa = PBXGroup;
+			children = (
+				F06D694B1EDD704200FB73A2 /* ColorPicker */,
+				F058F06E1DF17FF600736B47 /* BinderPicker */,
+				F058F0011DF17D7600736B47 /* BindersList */,
+				F058F0501DF17F3400736B47 /* BinderTabDetails */,
+				F058F03C1DF17EBA00736B47 /* BinderTabs */,
+				F058EFFA1DF17D3500736B47 /* CompleteRegistration */,
+				F058F0111DF17DDD00736B47 /* CreateBinder */,
+				F06738711E5B127A00E9739B /* CreateEditTab */,
+				F058F0601DF17FB000736B47 /* DocumentsPreview */,
+				F058F0241DF17E2A00736B47 /* EditBinder */,
+				F058F07C1DF1804800736B47 /* GetUnlimitedAccess */,
+				F058F02B1DF17E5000736B47 /* InviteUsers */,
+				F058F0321DF17E7C00736B47 /* ManageBinderUsers */,
+				F058EFF31DF17CB400736B47 /* RecoverPassword */,
+				F058F0891DF1808600736B47 /* Settings */,
+				F058EFE21DF17BFD00736B47 /* SignIn */,
+				F058EFE61DF17C4E00736B47 /* SignUp */,
+				F058EFDE1DF17BA600736B47 /* StartPage */,
+				F058F0751DF1802300736B47 /* TabPicker */,
+				F00858821E127EF300A86BA0 /* Chat */,
+				F058EFBA1DF17B1300736B47 /* Base */,
+				F058F0901DF180AB00736B47 /* Services */,
+				F06D96031E6D6113007C2BF5 /* Objects */,
+				F058F0B51DF180BE00736B47 /* Utils */,
+				F05B80391D50D8D1007F227F /* Supporting Files */,
+				F058EFB71DF17AE000736B47 /* AppDelegate.h */,
+				F058EFB81DF17AE000736B47 /* AppDelegate.m */,
+				F05B80451D50D8D1007F227F /* Assets.xcassets */,
+				F05B80471D50D8D1007F227F /* LaunchScreen.storyboard */,
+				F07346661E3F89AE0078A5B3 /* MyPlannrModel.xcdatamodeld */,
+			);
+			path = "myplannr-ios";
+			sourceTree = "<group>";
+		};
+		F05B80391D50D8D1007F227F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F08FD8AB1EB61F7B0039D3C0 /* iaps_description.txt */,
+				F05B804A1D50D8D1007F227F /* Info.plist */,
+				F0D037321DE0B78100E44FFA /* product_ids.plist */,
+				F029D4F91D76D97400107689 /* myplannr-ios.entitlements */,
+				F05B803A1D50D8D1007F227F /* main.m */,
+				F025A8CA1D82FA4800D6D52B /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F06738711E5B127A00E9739B /* CreateEditTab */ = {
+			isa = PBXGroup;
+			children = (
+				F06738751E5B127A00E9739B /* Model */,
+				F06738781E5B127A00E9739B /* View */,
+				F06738721E5B127A00E9739B /* Controller */,
+			);
+			name = CreateEditTab;
+			path = Classes/CreateEditTab;
+			sourceTree = "<group>";
+		};
+		F06738721E5B127A00E9739B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F06738731E5B127A00E9739B /* MYPCreateOrEditTabViewController.h */,
+				F06738741E5B127A00E9739B /* MYPCreateOrEditTabViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F06738751E5B127A00E9739B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F06738761E5B127A00E9739B /* MYPCreateOrEditTabModel.h */,
+				F06738771E5B127A00E9739B /* MYPCreateOrEditTabModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F06738781E5B127A00E9739B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F067387E1E5B135400E9739B /* MYPCreateOrEditTabStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F06BFEA61E6599F10053B151 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F06BFEA71E6599F10053B151 /* MYPGetUnlimitedAccessViewController.h */,
+				F06BFEA81E6599F10053B151 /* MYPGetUnlimitedAccessViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F06BFEA91E6599F10053B151 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F06BFEAA1E6599F10053B151 /* MYPStoreManager.h */,
+				F06BFEAB1E6599F10053B151 /* MYPStoreManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F06BFEAC1E6599F10053B151 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0861DF1805500736B47 /* MYPGetUnlimitedAccessStoryboard.storyboard */,
+				F06BFEAD1E6599F10053B151 /* MYPInAppProductCell.h */,
+				F06BFEAE1E6599F10053B151 /* MYPInAppProductCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F06D694B1EDD704200FB73A2 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F06D694C1EDD705300FB73A2 /* MYPColorPickerStoryboard.storyboard */,
+				F06D694E1EDD729500FB73A2 /* MYPColorPickerViewController.h */,
+				F06D694F1EDD729500FB73A2 /* MYPColorPickerViewController.m */,
+			);
+			name = ColorPicker;
+			path = Classes/ColorPicker;
+			sourceTree = "<group>";
+		};
+		F06D96031E6D6113007C2BF5 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F06D963D1E6DAB8A007C2BF5 /* Alerts */,
+				F06D96041E6D6113007C2BF5 /* MYPAvatarData.h */,
+				F06D96051E6D6113007C2BF5 /* MYPAvatarData.m */,
+				F06D96061E6D6113007C2BF5 /* MYPBinder.h */,
+				F06D96071E6D6113007C2BF5 /* MYPBinder.m */,
+				F06D96081E6D6113007C2BF5 /* MYPBinderTab.h */,
+				F06D96091E6D6113007C2BF5 /* MYPBinderTab.m */,
+				F06D960A1E6D6113007C2BF5 /* MYPChatMessage.h */,
+				F06D960B1E6D6113007C2BF5 /* MYPChatMessage.m */,
+				F06D960C1E6D6113007C2BF5 /* MYPDocument.h */,
+				F06D960D1E6D6113007C2BF5 /* MYPDocument.m */,
+				F06D960E1E6D6113007C2BF5 /* MYPInvitedUser.h */,
+				F06D960F1E6D6113007C2BF5 /* MYPInvitedUser.m */,
+				F06D96101E6D6113007C2BF5 /* MYPNonManagedInvitedUser.h */,
+				F06D96111E6D6113007C2BF5 /* MYPNonManagedInvitedUser.m */,
+				F06D96121E6D6113007C2BF5 /* MYPServiceObject.h */,
+				F06D96131E6D6113007C2BF5 /* MYPServiceObject.m */,
+				F06D96141E6D6113007C2BF5 /* MYPUser.h */,
+				F06D96151E6D6113007C2BF5 /* MYPUser.m */,
+				F06D96161E6D6113007C2BF5 /* MYPUserProtocol.h */,
+			);
+			name = Objects;
+			path = Classes/Objects;
+			sourceTree = "<group>";
+		};
+		F06D96361E6D84B4007C2BF5 /* AlertAwareController */ = {
+			isa = PBXGroup;
+			children = (
+				F06D96371E6D84B4007C2BF5 /* MYPAlertsAwareViewController.h */,
+				F06D96381E6D84B4007C2BF5 /* MYPAlertsAwareViewController.m */,
+				F06D96391E6D84B4007C2BF5 /* UIViewController+Alerts.h */,
+				F06D963A1E6D84B4007C2BF5 /* UIViewController+Alerts.m */,
+			);
+			path = AlertAwareController;
+			sourceTree = "<group>";
+		};
+		F06D963D1E6DAB8A007C2BF5 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				F06D964A1E6DAB8B007C2BF5 /* MYPAlertsFabric.h */,
+				F06D964B1E6DAB8B007C2BF5 /* MYPAlertsFabric.m */,
+				F06D96481E6DAB8B007C2BF5 /* MYPAlert.h */,
+				F06D96491E6DAB8B007C2BF5 /* MYPAlert.m */,
+				F06D963E1E6DAB8B007C2BF5 /* MYPBinderChangedAlert.h */,
+				F06D963F1E6DAB8B007C2BF5 /* MYPBinderChangedAlert.m */,
+				F06D96401E6DAB8B007C2BF5 /* MYPChatMessageAlert.h */,
+				F06D96411E6DAB8B007C2BF5 /* MYPChatMessageAlert.m */,
+				F06D96421E6DAB8B007C2BF5 /* MYPNewDocumentAlert.h */,
+				F06D96431E6DAB8B007C2BF5 /* MYPNewDocumentAlert.m */,
+				F06D96441E6DAB8B007C2BF5 /* MYPNewInviteAlert.h */,
+				F06D96451E6DAB8B007C2BF5 /* MYPNewInviteAlert.m */,
+				F06D96461E6DAB8B007C2BF5 /* MYPNewTabAlert.h */,
+				F06D96471E6DAB8B007C2BF5 /* MYPNewTabAlert.m */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		F072C19B1E49D57900D137A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F072C1A41E49D5F700D137A4 /* MYPCreateBinderViewController.h */,
+				F072C1A51E49D5F700D137A4 /* MYPCreateBinderViewController.m */,
+				F07DF0901E54A11B00434F09 /* MYPBaseCreateEditBinderViewController.h */,
+				F07DF0911E54A11B00434F09 /* MYPBaseCreateEditBinderViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F072C19C1E49D57900D137A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0EC23A31E4A3B1200628647 /* MYPCreateBinderModel.h */,
+				F0EC23A41E4A3B1200628647 /* MYPCreateBinderModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F072C19D1E49D57900D137A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0211DF17DF700736B47 /* MYPCreateBinderStoryboard.storyboard */,
+				F08B43021E5488A5000608DD /* MYPCreateOrEditBinderView.xib */,
+				F02824B31E782ADC00788CEA /* MYPInvitedUserCollectionViewCell.xib */,
+				F072C19E1E49D5E600D137A4 /* MYPInvitedUserCollectionViewCell.h */,
+				F072C19F1E49D5E600D137A4 /* MYPInvitedUserCollectionViewCell.m */,
+				F072C1A01E49D5E600D137A4 /* MYPInvitedUsersFlowLayout.h */,
+				F072C1A11E49D5E600D137A4 /* MYPInvitedUsersFlowLayout.m */,
+				F00B37AF1E548CB400D4B2CD /* MYPCreateOrEditBinderView.h */,
+				F00B37B01E548CB400D4B2CD /* MYPCreateOrEditBinderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F07C3E561E5B1E0800852CDF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F07C3E571E5B1E0800852CDF /* MYPBinderTabsViewController.h */,
+				F07C3E581E5B1E0800852CDF /* MYPBinderTabsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F07C3E591E5B1E0800852CDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F07C3E5F1E5B1E2400852CDF /* MYPBinderTabsModel.h */,
+				F07C3E601E5B1E2400852CDF /* MYPBinderTabsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F07C3E5A1E5B1E0800852CDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0451DF17EC500736B47 /* MYPBinderTabsStoryboard.storyboard */,
+				F058F0431DF17EC500736B47 /* MYPBinderTabCell.xib */,
+				F07C3E5B1E5B1E0800852CDF /* MYPBinderTabCell.h */,
+				F07C3E5C1E5B1E0800852CDF /* MYPBinderTabCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0A4FF721E62CD1300738B69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F0A4FF731E62CD1300738B69 /* MYPChatViewController.h */,
+				F0A4FF741E62CD1300738B69 /* MYPChatViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0A4FF751E62CD1300738B69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0A4FF761E62CD1300738B69 /* MYPChatModel.h */,
+				F0A4FF771E62CD1300738B69 /* MYPChatModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0A4FF781E62CD1300738B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F00858831E127F3E00A86BA0 /* MYPChatStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0A8F7A01E48CF2B00E52D93 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F0A8F7A91E48CF7C00E52D93 /* MYPBindersListViewController.h */,
+				F0A8F7AA1E48CF7C00E52D93 /* MYPBindersListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0A8F7A11E48CF2B00E52D93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0A8F7AC1E48CF9C00E52D93 /* MYPBindersListModel.h */,
+				F0A8F7AD1E48CF9C00E52D93 /* MYPBindersListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0A8F7A21E48CF2B00E52D93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F058F00E1DF17D8800736B47 /* MYPBindersListStoryboard.storyboard */,
+				F058F00B1DF17D8000736B47 /* MYPBinderCollectionViewCell.xib */,
+				F0A8F7A31E48CF6C00E52D93 /* MYPBinderCollectionViewCell.h */,
+				F0A8F7A41E48CF6C00E52D93 /* MYPBinderCollectionViewCell.m */,
+				F0A8F7A51E48CF6C00E52D93 /* MYPBindersFlowLayout.h */,
+				F0A8F7A61E48CF6C00E52D93 /* MYPBindersFlowLayout.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0E0B8CD1E5DBD9B00DA35FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F0E0B8CE1E5DBD9B00DA35FF /* MYPDocumentsPreviewViewController.h */,
+				F0E0B8CF1E5DBD9B00DA35FF /* MYPDocumentsPreviewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0E0B8D11E5DBD9B00DA35FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F058F0671DF17FBD00736B47 /* MYPDocumentsPreviewStoryboard.storyboard */,
+				F0E0B8D21E5DBD9B00DA35FF /* MYPDocumentsPreviewLayout.h */,
+				F0E0B8D31E5DBD9B00DA35FF /* MYPDocumentsPreviewLayout.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F05B80351D50D8D1007F227F /* myplannr-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F05B804D1D50D8D1007F227F /* Build configuration list for PBXNativeTarget "myplannr-ios" */;
+			buildPhases = (
+				D451FF26909FF7B80888935A /* [CP] Check Pods Manifest.lock */,
+				F05B80321D50D8D1007F227F /* Sources */,
+				F05B80331D50D8D1007F227F /* Frameworks */,
+				F05B80341D50D8D1007F227F /* Resources */,
+				40F3EDFD634EBB165ED4DAFE /* [CP] Embed Pods Frameworks */,
+				8CBF25823D08E73960FC8437 /* [CP] Copy Pods Resources */,
+				F04C19D21DCB989A00745A18 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "myplannr-ios";
+			productName = "myplannr-ios";
+			productReference = F05B80361D50D8D1007F227F /* myplannr-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F05B802E1D50D8D1007F227F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					F05B80351D50D8D1007F227F = {
+						CreatedOnToolsVersion = 7.3.1;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F05B80311D50D8D1007F227F /* Build configuration list for PBXProject "myplannr-ios" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F05B802D1D50D8D1007F227F;
+			productRefGroup = F05B80371D50D8D1007F227F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F05B80351D50D8D1007F227F /* myplannr-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F05B80341D50D8D1007F227F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F058F0231DF17DF700736B47 /* MYPCreateBinderStoryboard.storyboard in Resources */,
+				F00858851E127F3E00A86BA0 /* MYPChatStoryboard.storyboard in Resources */,
+				F08B43041E5488A5000608DD /* MYPCreateOrEditBinderView.xib in Resources */,
+				F058F05E1DF17F3F00736B47 /* MYPBinderTabDetailsStoryboard.storyboard in Resources */,
+				F058F0741DF1800000736B47 /* MYPBinderPickerStoryboard.storyboard in Resources */,
+				F0A0E3B91DA2BCF100B2860F /* LaunchScreen.storyboard in Resources */,
+				F08FD8A91EB61F7B0039D3C0 /* iaps_description.txt in Resources */,
+				F058EFEF1DF17C7000736B47 /* MYPSignInStoryboard.storyboard in Resources */,
+				F058EFF91DF17CBD00736B47 /* MYPRecoverPasswordStoryboard.storyboard in Resources */,
+				F058F07B1DF1802C00736B47 /* MYPTabPickerStoryboard.storyboard in Resources */,
+				F058F00D1DF17D8000736B47 /* MYPBinderCollectionViewCell.xib in Resources */,
+				F058F05F1DF17F3F00736B47 /* MYPDocumentCell.xib in Resources */,
+				F058F0101DF17D8800736B47 /* MYPBindersListStoryboard.storyboard in Resources */,
+				F058F0311DF17E5A00736B47 /* MYPInviteUsersStoryboard.storyboard in Resources */,
+				F058EFEC1DF17C5F00736B47 /* Main.storyboard in Resources */,
+				F02824B51E782ADC00788CEA /* MYPInvitedUserCollectionViewCell.xib in Resources */,
+				F06738801E5B135400E9739B /* MYPCreateOrEditTabStoryboard.storyboard in Resources */,
+				F058F08F1DF1809000736B47 /* MYPSettingsStoryboard.storyboard in Resources */,
+				F058F0471DF17EC500736B47 /* MYPBinderTabCell.xib in Resources */,
+				F058F0001DF17D3E00736B47 /* MYPCompleteRegistrationStoryboard.storyboard in Resources */,
+				F058EFDD1DF17B1300736B47 /* MYPUserProfileCardView.xib in Resources */,
+				F0D037331DE0B78100E44FFA /* product_ids.plist in Resources */,
+				F06D694D1EDD705300FB73A2 /* MYPColorPickerStoryboard.storyboard in Resources */,
+				F058EFF21DF17C7B00736B47 /* MYPSignUpStoryboard.storyboard in Resources */,
+				F058F0481DF17EC500736B47 /* MYPBinderTabsStoryboard.storyboard in Resources */,
+				F058F03B1DF17E8700736B47 /* MYPManageBinderUsersStoryboard.storyboard in Resources */,
+				F058F02A1DF17E3300736B47 /* MYPEditBinderStoryboard.storyboard in Resources */,
+				F058F0881DF1805500736B47 /* MYPGetUnlimitedAccessStoryboard.storyboard in Resources */,
+				F058F0691DF17FBD00736B47 /* MYPDocumentsPreviewStoryboard.storyboard in Resources */,
+				F05B80461D50D8D1007F227F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40F3EDFD634EBB165ED4DAFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myplannr-ios/Pods-myplannr-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CBF25823D08E73960FC8437 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myplannr-ios/Pods-myplannr-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D451FF26909FF7B80888935A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F04C19D21DCB989A00745A18 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 067fef0a07cc7f847da9382861109be80eaa02b5 49b92974604c920f34eac783dbd24a40e4fca2a838de1a3d4a84d58f324d5c51";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F05B80321D50D8D1007F227F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06D961C1E6D6113007C2BF5 /* MYPDocument.m in Sources */,
+				F06D961A1E6D6113007C2BF5 /* MYPBinderTab.m in Sources */,
+				F0259A801E57326400A6ECE2 /* MYPBinderUserCell.m in Sources */,
+				F058F0CD1DF180BF00736B47 /* MYPUtils.m in Sources */,
+				F058F0AC1DF180AB00736B47 /* MYPService.m in Sources */,
+				F058EFFD1DF17D3500736B47 /* MYPCompleteRegistrationViewController.m in Sources */,
+				F0C51DBC1E560235002CBCB5 /* NSError+Extensions.m in Sources */,
+				F06D961B1E6D6113007C2BF5 /* MYPChatMessage.m in Sources */,
+				F058F0CC1DF180BF00736B47 /* MYPUserProfile.m in Sources */,
+				F058EFD51DF17B1300736B47 /* MYPEditableCollectionViewCell.m in Sources */,
+				F02894961E6188B5005D17D1 /* FCSession.m in Sources */,
+				F058EFDB1DF17B1300736B47 /* MYPTabTitleView.m in Sources */,
+				F09D179E1E488AD70076543C /* FCManagedServiceObject.m in Sources */,
+				F0A8F7AB1E48CF7C00E52D93 /* MYPBindersListViewController.m in Sources */,
+				F06D96511E6DAB8B007C2BF5 /* MYPAlert.m in Sources */,
+				F042731F1E5CAF05000D4199 /* MYPTooBigDocumentWarningAlert.m in Sources */,
+				F07DF0921E54A11B00434F09 /* MYPBaseCreateEditBinderViewController.m in Sources */,
+				F058EFE11DF17BA600736B47 /* MYPStartPageViewController.m in Sources */,
+				F06D963B1E6D84B4007C2BF5 /* MYPAlertsAwareViewController.m in Sources */,
+				F0A8F7A81E48CF6C00E52D93 /* MYPBindersFlowLayout.m in Sources */,
+				F058EFE91DF17C4E00736B47 /* MYPSignUpViewController.m in Sources */,
+				F058EFD41DF17B1300736B47 /* MYPEditableCollectionView.m in Sources */,
+				F02A971D1E4F439600627669 /* NSDateFormatter+Extensions.m in Sources */,
+				F058EFF61DF17CB400736B47 /* MYPRecoverPasswordViewController.m in Sources */,
+				F06D69501EDD729500FB73A2 /* MYPColorPickerViewController.m in Sources */,
+				F04B7C1F1E67106B008F2F39 /* MYPFileUtils.m in Sources */,
+				F0A4FF791E62CD1300738B69 /* MYPChatViewController.m in Sources */,
+				F06D96201E6D6113007C2BF5 /* MYPUser.m in Sources */,
+				F058F08C1DF1808600736B47 /* MYPSettingsViewController.m in Sources */,
+				F058F0781DF1802300736B47 /* MYPTabPickerViewController.m in Sources */,
+				F06D96501E6DAB8B007C2BF5 /* MYPNewTabAlert.m in Sources */,
+				F058EFD31DF17B1300736B47 /* MYPCardViewCell.m in Sources */,
+				F07FADF11E59B276009EE044 /* FCNibView.m in Sources */,
+				F0A8F7A71E48CF6C00E52D93 /* MYPBinderCollectionViewCell.m in Sources */,
+				F058EFB91DF17AE000736B47 /* AppDelegate.m in Sources */,
+				F09D17A11E488B870076543C /* FCServiceObject.m in Sources */,
+				F0EC23A51E4A3B1200628647 /* MYPCreateBinderModel.m in Sources */,
+				F042731E1E5CAF05000D4199 /* MYPDocumentCell.m in Sources */,
+				F07C3E611E5B1E2400852CDF /* MYPBinderTabsModel.m in Sources */,
+				F058F0D01DF180BF00736B47 /* UIImage+Extensions.m in Sources */,
+				F00B37B11E548CB400D4B2CD /* MYPCreateOrEditBinderView.m in Sources */,
+				F06BFEAF1E6599F10053B151 /* MYPGetUnlimitedAccessViewController.m in Sources */,
+				F072C1A31E49D5E600D137A4 /* MYPInvitedUsersFlowLayout.m in Sources */,
+				F058F0CE1DF180BF00736B47 /* NSString+Utilities.m in Sources */,
+				F06D961E1E6D6113007C2BF5 /* MYPNonManagedInvitedUser.m in Sources */,
+				F07C3E5E1E5B1E0800852CDF /* MYPBinderTabCell.m in Sources */,
+				F06D961D1E6D6113007C2BF5 /* MYPInvitedUser.m in Sources */,
+				F04273221E5CAFBF000D4199 /* MYPBinderTabDocumentsModel.m in Sources */,
+				F058EFDC1DF17B1300736B47 /* MYPUserProfileCardView.m in Sources */,
+				F06738791E5B127A00E9739B /* MYPCreateOrEditTabViewController.m in Sources */,
+				F058EFD81DF17B1300736B47 /* MYPCheckbox.m in Sources */,
+				F058F0C91DF180BF00736B47 /* MYPConstants.m in Sources */,
+				F07C3E5D1E5B1E0800852CDF /* MYPBinderTabsViewController.m in Sources */,
+				F06D96181E6D6113007C2BF5 /* MYPAvatarData.m in Sources */,
+				F058F0CB1DF180BF00736B47 /* MYPFilesDownloader.m in Sources */,
+				F058F0CF1DF180BF00736B47 /* UIColor+Extensions.m in Sources */,
+				F06D964E1E6DAB8B007C2BF5 /* MYPNewDocumentAlert.m in Sources */,
+				F06BFEB01E6599F10053B151 /* MYPStoreManager.m in Sources */,
+				F06D96191E6D6113007C2BF5 /* MYPBinder.m in Sources */,
+				F06D964F1E6DAB8B007C2BF5 /* MYPNewInviteAlert.m in Sources */,
+				F072C1A81E49D5F700D137A4 /* MYPCreateBinderViewController.m in Sources */,
+				F06D964C1E6DAB8B007C2BF5 /* MYPBinderChangedAlert.m in Sources */,
+				F0259A771E572D3B00A6ECE2 /* MYPInviteUsersViewController.m in Sources */,
+				F058F0CA1DF180BF00736B47 /* MYPDocumentPicker.m in Sources */,
+				F0E0B8D51E5DBD9B00DA35FF /* MYPDocumentsPreviewLayout.m in Sources */,
+				F058EFD61DF17B1300736B47 /* MYPCenteredFlowLayout.m in Sources */,
+				F06D961F1E6D6113007C2BF5 /* MYPServiceObject.m in Sources */,
+				F058F0B41DF180AB00736B47 /* RKValueTransformer+Extenstions.m in Sources */,
+				F05B803B1D50D8D1007F227F /* main.m in Sources */,
+				F042731D1E5CAF05000D4199 /* MYPBinderTabDetailsController.m in Sources */,
+				F058F0AA1DF180AB00736B47 /* FCNetworkServiceBase.m in Sources */,
+				F058EFD91DF17B1300736B47 /* MYPCircleButton.m in Sources */,
+				F0E0B8D41E5DBD9B00DA35FF /* MYPDocumentsPreviewViewController.m in Sources */,
+				F02A971A1E4F3D6600627669 /* MYPEditBinderModel.m in Sources */,
+				F0259A831E57357C00A6ECE2 /* MYPManageBinderUsersModel.m in Sources */,
+				F072C1A21E49D5E600D137A4 /* MYPInvitedUserCollectionViewCell.m in Sources */,
+				F09D179B1E4885F10076543C /* NSManagedObject+Extensions.m in Sources */,
+				F058EFE51DF17BFD00736B47 /* MYPSignInViewController.m in Sources */,
+				F058EFDA1DF17B1300736B47 /* MYPColorPickerView.m in Sources */,
+				F07FADEE1E59B228009EE044 /* MYPTableView.m in Sources */,
+				F0A8F7AE1E48CF9C00E52D93 /* MYPBindersListModel.m in Sources */,
+				F058F0D11DF180BF00736B47 /* UIImageView+Letters.m in Sources */,
+				F0A4FF7A1E62CD1300738B69 /* MYPChatModel.m in Sources */,
+				F06D963C1E6D84B4007C2BF5 /* UIViewController+Alerts.m in Sources */,
+				F067387A1E5B127A00E9739B /* MYPCreateOrEditTabModel.m in Sources */,
+				F07346681E3F89AE0078A5B3 /* MyPlannrModel.xcdatamodeld in Sources */,
+				F06D964D1E6DAB8B007C2BF5 /* MYPChatMessageAlert.m in Sources */,
+				F06D96521E6DAB8B007C2BF5 /* MYPAlertsFabric.m in Sources */,
+				F058F0711DF17FF600736B47 /* MYPBinderPickerViewController.m in Sources */,
+				F0259A7F1E57326400A6ECE2 /* MYPManageBinderUsersViewController.m in Sources */,
+				F02A97171E4F3D5600627669 /* MYPEditBinderViewController.m in Sources */,
+				F058EFD71DF17B1300736B47 /* MYPCardView.m in Sources */,
+				F06BFEB11E6599F10053B151 /* MYPInAppProductCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F00858831E127F3E00A86BA0 /* MYPChatStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F00858841E127F3E00A86BA0 /* Base */,
+			);
+			name = MYPChatStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F02824B31E782ADC00788CEA /* MYPInvitedUserCollectionViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F02824B41E782ADC00788CEA /* Base */,
+			);
+			name = MYPInvitedUserCollectionViewCell.xib;
+			sourceTree = "<group>";
+		};
+		F058EFEA1DF17C5F00736B47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058EFEB1DF17C5F00736B47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F058EFED1DF17C7000736B47 /* MYPSignInStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058EFEE1DF17C7000736B47 /* Base */,
+			);
+			name = MYPSignInStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F058EFF01DF17C7B00736B47 /* MYPSignUpStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058EFF11DF17C7B00736B47 /* Base */,
+			);
+			name = MYPSignUpStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F058EFF71DF17CBD00736B47 /* MYPRecoverPasswordStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058EFF81DF17CBD00736B47 /* Base */,
+			);
+			name = MYPRecoverPasswordStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F058EFFE1DF17D3E00736B47 /* MYPCompleteRegistrationStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058EFFF1DF17D3E00736B47 /* Base */,
+			);
+			name = MYPCompleteRegistrationStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F058F00B1DF17D8000736B47 /* MYPBinderCollectionViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F00C1DF17D8000736B47 /* Base */,
+			);
+			name = MYPBinderCollectionViewCell.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F00E1DF17D8800736B47 /* MYPBindersListStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F00F1DF17D8800736B47 /* Base */,
+			);
+			name = MYPBindersListStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F0211DF17DF700736B47 /* MYPCreateBinderStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F0221DF17DF700736B47 /* Base */,
+			);
+			name = MYPCreateBinderStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F0281DF17E3300736B47 /* MYPEditBinderStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F0291DF17E3300736B47 /* Base */,
+			);
+			name = MYPEditBinderStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F02F1DF17E5A00736B47 /* MYPInviteUsersStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F0301DF17E5A00736B47 /* Base */,
+			);
+			name = MYPInviteUsersStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F0391DF17E8700736B47 /* MYPManageBinderUsersStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F03A1DF17E8700736B47 /* Base */,
+			);
+			name = MYPManageBinderUsersStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F0431DF17EC500736B47 /* MYPBinderTabCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F0441DF17EC500736B47 /* Base */,
+			);
+			name = MYPBinderTabCell.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F0451DF17EC500736B47 /* MYPBinderTabsStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F0461DF17EC500736B47 /* Base */,
+			);
+			name = MYPBinderTabsStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F05A1DF17F3F00736B47 /* MYPBinderTabDetailsStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F05B1DF17F3F00736B47 /* Base */,
+			);
+			name = MYPBinderTabDetailsStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F05C1DF17F3F00736B47 /* MYPDocumentCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F05D1DF17F3F00736B47 /* Base */,
+			);
+			name = MYPDocumentCell.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F0671DF17FBD00736B47 /* MYPDocumentsPreviewStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F0681DF17FBD00736B47 /* Base */,
+			);
+			name = MYPDocumentsPreviewStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F0721DF1800000736B47 /* MYPBinderPickerStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F0731DF1800000736B47 /* Base */,
+			);
+			name = MYPBinderPickerStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F058F0791DF1802C00736B47 /* MYPTabPickerStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F07A1DF1802C00736B47 /* Base */,
+			);
+			name = MYPTabPickerStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F058F0861DF1805500736B47 /* MYPGetUnlimitedAccessStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F0871DF1805500736B47 /* Base */,
+			);
+			name = MYPGetUnlimitedAccessStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F058F08D1DF1809000736B47 /* MYPSettingsStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F058F08E1DF1809000736B47 /* Base */,
+			);
+			name = MYPSettingsStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F05B80471D50D8D1007F227F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F05B80481D50D8D1007F227F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F067387E1E5B135400E9739B /* MYPCreateOrEditTabStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F067387F1E5B135400E9739B /* Base */,
+			);
+			name = MYPCreateOrEditTabStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F08B43021E5488A5000608DD /* MYPCreateOrEditBinderView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F08B43031E5488A5000608DD /* Base */,
+			);
+			name = MYPCreateOrEditBinderView.xib;
+			sourceTree = "<group>";
+		};
+		F08FD8AB1EB61F7B0039D3C0 /* iaps_description.txt */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F08FD8AA1EB61F7B0039D3C0 /* Base */,
+			);
+			name = iaps_description.txt;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F05B804B1D50D8D1007F227F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F05B804C1D50D8D1007F227F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F05B804E1D50D8D1007F227F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD721658E0141C10F8D2685 /* Pods-myplannr-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = "myplannr-ios/myplannr-ios.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UD2X88EGVG;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myplannr-ios/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				INFOPLIST_FILE = "myplannr-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myplannr.myplannr-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0574fe37-e94b-4c1b-a339-84acdebe91be";
+				PROVISIONING_PROFILE_SPECIFIER = "my plannr development";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F05B804F1D50D8D1007F227F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481C4E7427AEC9C79749E039 /* Pods-myplannr-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = "myplannr-ios/myplannr-ios.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = UD2X88EGVG;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "myplannr-ios/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				INFOPLIST_FILE = "myplannr-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myplannr.myplannr-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a6761933-3cb2-4c57-9637-2631e466079c";
+				PROVISIONING_PROFILE_SPECIFIER = "my_plannr distribution";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F05B80311D50D8D1007F227F /* Build configuration list for PBXProject "myplannr-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F05B804B1D50D8D1007F227F /* Debug */,
+				F05B804C1D50D8D1007F227F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F05B804D1D50D8D1007F227F /* Build configuration list for PBXNativeTarget "myplannr-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F05B804E1D50D8D1007F227F /* Debug */,
+				F05B804F1D50D8D1007F227F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F07346661E3F89AE0078A5B3 /* MyPlannrModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F07346671E3F89AE0078A5B3 /* MyPlannrModel.xcdatamodel */,
+			);
+			currentVersion = F07346671E3F89AE0078A5B3 /* MyPlannrModel.xcdatamodel */;
+			path = MyPlannrModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F05B802E1D50D8D1007F227F /* Project object */;
+}

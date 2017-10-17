@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rbF-Kc-whg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Color Picker-->
+        <scene sceneID="mda-oG-CHt">
+            <objects>
+                <viewController title="Color Picker" id="31H-2q-4RN" customClass="MYPColorPickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m3s-oP-fz2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ai4-k7-4Tf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NGG-d7-9kT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVs-VZ-iZZ" customClass="HRColorPickerView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ai4-k7-4Tf" firstAttribute="top" secondItem="FVs-VZ-iZZ" secondAttribute="bottom" id="DyZ-px-TUx"/>
+                            <constraint firstAttribute="trailing" secondItem="FVs-VZ-iZZ" secondAttribute="trailing" id="Z36-mc-YQN"/>
+                            <constraint firstItem="FVs-VZ-iZZ" firstAttribute="top" secondItem="m3s-oP-fz2" secondAttribute="bottom" id="pZi-oc-wAc"/>
+                            <constraint firstItem="FVs-VZ-iZZ" firstAttribute="leading" secondItem="NGG-d7-9kT" secondAttribute="leading" id="wRJ-rD-4Dh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Color Picker" id="QC3-ik-G5x">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="JCr-eq-PvP">
+                            <connections>
+                                <action selector="handleCancelBarButtonClick:" destination="31H-2q-4RN" id="6fv-q5-wBz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="DCC-w9-UCM">
+                            <connections>
+                                <action selector="handleDoneBarButtonClick:" destination="31H-2q-4RN" id="coV-pr-fx3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="colorPickerView" destination="FVs-VZ-iZZ" id="fuH-LD-2N5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1H-w4-0lW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751.20000000000005" y="62.518740629685162"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yVa-gH-Dl4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rbF-Kc-whg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M7o-2B-8DC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="31H-2q-4RN" kind="relationship" relationship="rootViewController" id="3GQ-I1-cWp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpx-5U-Kqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="62.518740629685162"/>
+        </scene>
+    </scenes>
+</document>

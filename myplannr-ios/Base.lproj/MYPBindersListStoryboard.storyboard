@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="avA-dE-wGR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Binders-->
+        <scene sceneID="0LU-1O-Yfd">
+            <objects>
+                <viewController storyboardIdentifier="BindersListController" title="Binders" id="avA-dE-wGR" customClass="MYPBindersListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s3j-ne-Erf"/>
+                        <viewControllerLayoutGuide type="bottom" id="BzT-3H-vwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Dk-N6-fIj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wU-r0-Fb8" userLabel="Collection View">
+                                <rect key="frame" x="0.0" y="64" width="375" height="507"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="YJG-gU-J52" customClass="MYPBindersFlowLayout"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="avA-dE-wGR" id="cez-gZ-HJj"/>
+                                    <outlet property="delegate" destination="avA-dE-wGR" id="xjf-Ch-j3h"/>
+                                </connections>
+                            </collectionView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAO-I7-ebf" userLabel="Placeholder View">
+                                <rect key="frame" x="28" y="160" width="319" height="91.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no binders yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5H-ym-6qT" userLabel="Placeholder Primary Label">
+                                        <rect key="frame" x="0.0" y="8" width="319" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create the first one by tapping the plus button below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eY-zF-5bd" userLabel="Placeholder Secodnary Label">
+                                        <rect key="frame" x="24" y="50" width="271" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.58431372550000005" green="0.59607843140000005" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="b5H-ym-6qT" secondAttribute="trailing" id="2jc-yo-Qyo"/>
+                                    <constraint firstItem="b5H-ym-6qT" firstAttribute="leading" secondItem="tAO-I7-ebf" secondAttribute="leading" id="2nB-TZ-Lj0"/>
+                                    <constraint firstAttribute="bottom" secondItem="6eY-zF-5bd" secondAttribute="bottom" constant="8" id="BpK-4M-wUQ"/>
+                                    <constraint firstItem="6eY-zF-5bd" firstAttribute="leading" secondItem="tAO-I7-ebf" secondAttribute="leading" constant="24" id="Ip4-p9-cRc"/>
+                                    <constraint firstItem="b5H-ym-6qT" firstAttribute="top" secondItem="tAO-I7-ebf" secondAttribute="top" constant="8" id="XxR-jg-nwF"/>
+                                    <constraint firstAttribute="trailing" secondItem="6eY-zF-5bd" secondAttribute="trailing" constant="24" id="afM-Jy-S6C"/>
+                                    <constraint firstItem="6eY-zF-5bd" firstAttribute="top" secondItem="b5H-ym-6qT" secondAttribute="bottom" constant="20" id="ykc-4h-JKi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKo-pa-3IW" userLabel="Add Binder Button" customClass="MYPCircleButton">
+                                <rect key="frame" x="164" y="595" width="48" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="AddButton"/>
+                                <connections>
+                                    <segue destination="vOW-Sa-ean" kind="presentation" identifier="showCreateBinderController" id="bJW-nG-ClY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMg-yG-oc4" userLabel="Settings Button">
+                                <rect key="frame" x="28" y="600.5" width="32" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="SettingsButton"/>
+                                <connections>
+                                    <segue destination="JzC-Ic-J74" kind="show" identifier="showSettingsController" id="u5V-5w-Pb5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac3-2w-4KI" userLabel="Create Document Button">
+                                <rect key="frame" x="311" y="600.5" width="36" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="AddDocumentButton"/>
+                                <connections>
+                                    <action selector="handleCreateDocumentButtonClick:" destination="avA-dE-wGR" eventType="touchUpInside" id="EuH-x0-mC8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8wU-r0-Fb8" firstAttribute="trailing" secondItem="4Dk-N6-fIj" secondAttribute="trailing" id="3zZ-jE-5yz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nKo-pa-3IW" secondAttribute="bottom" constant="24" id="9zw-hR-gS7"/>
+                            <constraint firstItem="8wU-r0-Fb8" firstAttribute="leading" secondItem="4Dk-N6-fIj" secondAttribute="leading" id="Ha6-sG-9VS"/>
+                            <constraint firstItem="ZMg-yG-oc4" firstAttribute="baseline" secondItem="nKo-pa-3IW" secondAttribute="baseline" constant="3" id="KTy-mx-2kw"/>
+                            <constraint firstItem="tAO-I7-ebf" firstAttribute="top" secondItem="s3j-ne-Erf" secondAttribute="bottom" constant="96" id="TEn-qu-o7A"/>
+                            <constraint firstItem="nKo-pa-3IW" firstAttribute="centerX" secondItem="4Dk-N6-fIj" secondAttribute="centerX" id="b37-uk-XWh"/>
+                            <constraint firstItem="nKo-pa-3IW" firstAttribute="top" secondItem="8wU-r0-Fb8" secondAttribute="bottom" constant="24" id="ctq-D7-5cC"/>
+                            <constraint firstItem="tAO-I7-ebf" firstAttribute="leading" secondItem="4Dk-N6-fIj" secondAttribute="leading" constant="28" id="dOK-DU-xUb"/>
+                            <constraint firstItem="8wU-r0-Fb8" firstAttribute="top" secondItem="s3j-ne-Erf" secondAttribute="bottom" id="ghK-5l-9zb"/>
+                            <constraint firstItem="ZMg-yG-oc4" firstAttribute="leading" secondItem="4Dk-N6-fIj" secondAttribute="leading" constant="28" id="hln-4S-lJV"/>
+                            <constraint firstItem="Ac3-2w-4KI" firstAttribute="baseline" secondItem="nKo-pa-3IW" secondAttribute="baseline" constant="3" id="leH-7Z-C33"/>
+                            <constraint firstAttribute="trailing" secondItem="tAO-I7-ebf" secondAttribute="trailing" constant="28" id="mHm-ff-ZhR"/>
+                            <constraint firstAttribute="trailing" secondItem="Ac3-2w-4KI" secondAttribute="trailing" constant="28" id="xhP-9j-R4V"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Binders" id="scs-zz-AvR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Z66-ti-6nW">
+                            <connections>
+                                <action selector="handleRefreshBarButtonClick:" destination="avA-dE-wGR" id="qP4-kC-HaB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addBinderButton" destination="nKo-pa-3IW" id="Edz-er-PtH"/>
+                        <outlet property="bindersFlowLayout" destination="YJG-gU-J52" id="zMg-Ym-agL"/>
+                        <outlet property="collectionView" destination="8wU-r0-Fb8" id="1LI-rV-TlT"/>
+                        <outlet property="createDocumentButton" destination="Ac3-2w-4KI" id="BxN-b0-yDS"/>
+                        <outlet property="placeholderView" destination="tAO-I7-ebf" id="Wx3-nn-8jp"/>
+                        <outlet property="refreshBarButtonItem" destination="Z66-ti-6nW" id="dP4-Zl-eUG"/>
+                        <outlet property="settingsButton" destination="ZMg-yG-oc4" id="bjz-v1-BHb"/>
+                        <segue destination="nyw-yx-xXU" kind="presentation" identifier="showEditBinderController" id="iwG-6E-53N"/>
+                        <segue destination="cnT-Pz-6Qo" kind="show" identifier="showBinderTabsController" id="WHJ-Vs-3EA"/>
+                        <segue destination="99K-MZ-y0d" kind="show" identifier="showChatStoryboard" id="mbh-Qv-c9t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzR-1r-5h8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.79999999999995" y="96.7016491754123"/>
+        </scene>
+        <!--MYPChatStoryboard-->
+        <scene sceneID="RhQ-6a-0GV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MYPChatStoryboard" id="99K-MZ-y0d" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YKS-MV-UTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1545" y="-103"/>
+        </scene>
+        <!--MYPBinderTabsStoryboard-->
+        <scene sceneID="d71-mF-ZEm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MYPBinderTabsStoryboard" id="cnT-Pz-6Qo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djJ-a6-e4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1691" y="96"/>
+        </scene>
+        <!--MYPEditBinderStoryboard-->
+        <scene sceneID="N7W-KH-H3u">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MYPEditBinderStoryboard" id="nyw-yx-xXU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFt-bH-k8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1210" y="600"/>
+        </scene>
+        <!--MYPSettingsStoryboard-->
+        <scene sceneID="ea0-xx-WeA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MYPSettingsStoryboard" id="JzC-Ic-J74" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XpU-aU-WCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="544"/>
+        </scene>
+        <!--MYPCreateBinderStoryboard-->
+        <scene sceneID="5uL-kg-4Dv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MYPCreateBinderStoryboard" id="vOW-Sa-ean" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEj-AB-XOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="601"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddButton" width="16" height="16"/>
+        <image name="AddDocumentButton" width="26" height="22"/>
+        <image name="SettingsButton" width="22" height="22"/>
+    </resources>
+</document>

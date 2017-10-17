@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mr2-ai-M3m" customClass="MYPDocumentCell">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U6J-XG-mww">
+                        <rect key="frame" x="4" y="4" width="64" height="64"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </imageView>
+                    <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xq5-mu-WH6" userLabel="Editing Mode View">
+                        <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1HR-Ve-6rW" customClass="MYPCheckbox">
+                        <rect key="frame" x="23" y="23" width="26" height="26"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="U6J-XG-mww" firstAttribute="leading" secondItem="Mr2-ai-M3m" secondAttribute="leading" constant="4" id="3M0-GI-EV1"/>
+                <constraint firstAttribute="bottom" secondItem="Xq5-mu-WH6" secondAttribute="bottom" id="6Ew-3J-nPU"/>
+                <constraint firstItem="Xq5-mu-WH6" firstAttribute="leading" secondItem="Mr2-ai-M3m" secondAttribute="leading" id="CtZ-jw-5E6"/>
+                <constraint firstItem="U6J-XG-mww" firstAttribute="top" secondItem="Mr2-ai-M3m" secondAttribute="top" constant="4" id="EMJ-66-dYu"/>
+                <constraint firstAttribute="bottom" secondItem="U6J-XG-mww" secondAttribute="bottom" constant="4" id="NWS-rY-KfX"/>
+                <constraint firstItem="1HR-Ve-6rW" firstAttribute="centerX" secondItem="Mr2-ai-M3m" secondAttribute="centerX" id="Pb2-9K-6AR"/>
+                <constraint firstItem="1HR-Ve-6rW" firstAttribute="centerY" secondItem="Mr2-ai-M3m" secondAttribute="centerY" id="Pnc-hc-jvZ"/>
+                <constraint firstAttribute="trailing" secondItem="Xq5-mu-WH6" secondAttribute="trailing" id="ZyK-gP-85D"/>
+                <constraint firstAttribute="trailing" secondItem="U6J-XG-mww" secondAttribute="trailing" constant="4" id="sdZ-4c-07o"/>
+                <constraint firstItem="Xq5-mu-WH6" firstAttribute="top" secondItem="Mr2-ai-M3m" secondAttribute="top" id="uob-GL-236"/>
+            </constraints>
+            <size key="customSize" width="72" height="69"/>
+            <connections>
+                <outlet property="checkbox" destination="1HR-Ve-6rW" id="Qw6-4k-cSu"/>
+                <outlet property="editingModeView" destination="Xq5-mu-WH6" id="hAo-4h-Ghh"/>
+                <outlet property="imageView" destination="U6J-XG-mww" id="qiE-v3-kcv"/>
+            </connections>
+            <point key="canvasLocation" x="-248" y="-53.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

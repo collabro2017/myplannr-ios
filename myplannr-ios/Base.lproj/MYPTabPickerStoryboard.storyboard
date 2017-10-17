@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kfu-NY-Wk5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Tab-->
+        <scene sceneID="QdC-Au-aAV">
+            <objects>
+                <viewController title="Choose Tab" automaticallyAdjustsScrollViewInsets="NO" id="Kfu-NY-Wk5" customClass="MYPTabPickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pfh-IV-Ud1"/>
+                        <viewControllerLayoutGuide type="bottom" id="IBZ-ry-xMV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ref-xa-AnM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aB7-hx-nCY" customClass="MYPTableView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="602.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kfu-NY-Wk5" id="FD1-2K-qPp"/>
+                                    <outlet property="delegate" destination="Kfu-NY-Wk5" id="I2w-o7-jkt"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0g-OG-CH1" userLabel="Placeholder View">
+                                <rect key="frame" x="28" y="160" width="319" height="91.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Binder is empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWT-lU-Yx9" userLabel="Placeholder Primary Label">
+                                        <rect key="frame" x="0.0" y="8" width="319" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The are no any Tabs here yet. Try choosing a different Binder." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDp-n3-Ju0" userLabel="Placeholder Secodnary Label">
+                                        <rect key="frame" x="24" y="50" width="271" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.58431372550000005" green="0.59607843140000005" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FWT-lU-Yx9" secondAttribute="trailing" id="0Q6-bo-PrX"/>
+                                    <constraint firstAttribute="trailing" secondItem="bDp-n3-Ju0" secondAttribute="trailing" constant="24" id="2D1-HI-gDL"/>
+                                    <constraint firstItem="bDp-n3-Ju0" firstAttribute="top" secondItem="FWT-lU-Yx9" secondAttribute="bottom" constant="20" id="3IL-O7-UCC"/>
+                                    <constraint firstAttribute="bottom" secondItem="bDp-n3-Ju0" secondAttribute="bottom" constant="8" id="Ex9-gt-IQF"/>
+                                    <constraint firstItem="bDp-n3-Ju0" firstAttribute="leading" secondItem="m0g-OG-CH1" secondAttribute="leading" constant="24" id="Kih-pd-KcJ"/>
+                                    <constraint firstItem="FWT-lU-Yx9" firstAttribute="leading" secondItem="m0g-OG-CH1" secondAttribute="leading" id="My8-eG-plI"/>
+                                    <constraint firstItem="FWT-lU-Yx9" firstAttribute="top" secondItem="m0g-OG-CH1" secondAttribute="top" constant="8" id="XEI-wg-Xi8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="m0g-OG-CH1" firstAttribute="top" secondItem="Pfh-IV-Ud1" secondAttribute="bottom" constant="96" id="By2-w4-sc4"/>
+                            <constraint firstItem="m0g-OG-CH1" firstAttribute="leading" secondItem="Ref-xa-AnM" secondAttribute="leading" constant="28" id="Z1F-Rm-D6j"/>
+                            <constraint firstItem="aB7-hx-nCY" firstAttribute="leading" secondItem="Ref-xa-AnM" secondAttribute="leading" id="dWK-kg-JcB"/>
+                            <constraint firstAttribute="trailing" secondItem="m0g-OG-CH1" secondAttribute="trailing" constant="28" id="fHZ-86-7Ea"/>
+                            <constraint firstAttribute="trailing" secondItem="aB7-hx-nCY" secondAttribute="trailing" id="fN4-VT-Znd"/>
+                            <constraint firstItem="IBZ-ry-xMV" firstAttribute="top" secondItem="aB7-hx-nCY" secondAttribute="bottom" id="gzM-B2-RfU"/>
+                            <constraint firstItem="aB7-hx-nCY" firstAttribute="top" secondItem="Pfh-IV-Ud1" secondAttribute="bottom" id="ilS-S7-fi0"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="placeholderView" destination="m0g-OG-CH1" id="VjO-vO-tRn"/>
+                        <outlet property="tableView" destination="aB7-hx-nCY" id="iQp-yC-vHR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNc-iX-Vxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="-597"/>
+        </scene>
+    </scenes>
+</document>

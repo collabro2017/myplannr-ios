@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  myplannr-ios
+//
+//  Created by fraggjkee MBP on 09/09/16.
+//
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIColor+Extensions.h"
+#import "NSString+Utilities.h"
+#import "UIImage+Extensions.h"
+#import "NSDateFormatter+Extensions.h"
+#import "NSError+Extensions.h"
+
+#endif /* PrefixHeader_pch */

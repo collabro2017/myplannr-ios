@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xZf-HK-mhJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tabs-->
+        <scene sceneID="cxY-Ip-QMG">
+            <objects>
+                <viewController title="Tabs" automaticallyAdjustsScrollViewInsets="NO" id="xZf-HK-mhJ" customClass="MYPBinderTabsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pmc-yE-lcP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rds-Tf-U28"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6dM-gF-m9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="64" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jlx-qS-hJc" customClass="MYPTableView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xZf-HK-mhJ" id="rdA-9Q-g2b"/>
+                                    <outlet property="delegate" destination="xZf-HK-mhJ" id="1nQ-Cf-Ooy"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSr-d5-7M9" userLabel="Placeholder View">
+                                <rect key="frame" x="28" y="160" width="319" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no tabs yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCf-aS-QSQ" userLabel="Placeholder Primary Label">
+                                        <rect key="frame" x="0.0" y="8" width="319" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create the first one by tapping the plus button below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R52-om-sbB" userLabel="Placeholder Secodnary Label">
+                                        <rect key="frame" x="24" y="49.5" width="271" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.58431372549019611" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="R52-om-sbB" secondAttribute="bottom" constant="8" id="9Ww-ha-VR7"/>
+                                    <constraint firstItem="R52-om-sbB" firstAttribute="leading" secondItem="GSr-d5-7M9" secondAttribute="leading" constant="24" id="FPc-QF-eK0"/>
+                                    <constraint firstAttribute="trailing" secondItem="rCf-aS-QSQ" secondAttribute="trailing" id="cl1-XA-2Yn"/>
+                                    <constraint firstItem="rCf-aS-QSQ" firstAttribute="leading" secondItem="GSr-d5-7M9" secondAttribute="leading" id="lpU-yX-4Ao"/>
+                                    <constraint firstItem="R52-om-sbB" firstAttribute="top" secondItem="rCf-aS-QSQ" secondAttribute="bottom" constant="20" id="lr4-6d-Kbn"/>
+                                    <constraint firstAttribute="trailing" secondItem="R52-om-sbB" secondAttribute="trailing" constant="24" id="mem-oM-Fb6"/>
+                                    <constraint firstItem="rCf-aS-QSQ" firstAttribute="top" secondItem="GSr-d5-7M9" secondAttribute="top" constant="8" id="unu-CW-q0u"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-uv-HcO" customClass="MYPCircleButton">
+                                <rect key="frame" x="163.5" y="551" width="48" height="48"/>
+                                <state key="normal" image="AddButton"/>
+                                <connections>
+                                    <segue destination="Yff-dw-UaA" kind="presentation" identifier="showCreateTabController" id="g1n-lp-7D5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jlx-qS-hJc" secondAttribute="trailing" id="2V4-fZ-lnq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GSr-d5-7M9" secondAttribute="trailing" constant="12" id="2pa-tT-Weg"/>
+                            <constraint firstItem="Rds-Tf-U28" firstAttribute="top" secondItem="Jlx-qS-hJc" secondAttribute="bottom" id="4eF-Xj-6CO"/>
+                            <constraint firstItem="Jlx-qS-hJc" firstAttribute="top" secondItem="Pmc-yE-lcP" secondAttribute="bottom" id="5BL-nf-blA"/>
+                            <constraint firstItem="GSr-d5-7M9" firstAttribute="leading" secondItem="6dM-gF-m9Q" secondAttribute="leadingMargin" constant="12" id="L9w-2b-zMg"/>
+                            <constraint firstItem="Rds-Tf-U28" firstAttribute="top" secondItem="AfH-uv-HcO" secondAttribute="bottom" constant="24" id="Ujq-ul-RUV"/>
+                            <constraint firstItem="GSr-d5-7M9" firstAttribute="top" secondItem="Pmc-yE-lcP" secondAttribute="bottom" constant="96" id="Xnf-wv-kfZ"/>
+                            <constraint firstItem="Jlx-qS-hJc" firstAttribute="leading" secondItem="6dM-gF-m9Q" secondAttribute="leading" id="lTD-HX-Jo0"/>
+                            <constraint firstItem="AfH-uv-HcO" firstAttribute="centerX" secondItem="6dM-gF-m9Q" secondAttribute="centerX" id="nTk-uf-gEt"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Np6-m4-V71"/>
+                        <barButtonItem enabled="NO" title="Label Item" id="5Za-vV-akK"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="1Nb-Sc-gIj"/>
+                        <barButtonItem enabled="NO" systemItem="trash" id="kcv-Oc-Aso">
+                            <connections>
+                                <action selector="handleTrashBottomBarItemClick:" destination="xZf-HK-mhJ" id="Ez0-Xj-1XB"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Tabs" id="z2O-DY-1v4">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="L5j-u4-Fef">
+                            <connections>
+                                <action selector="handleCancelBarButtonClick:" destination="xZf-HK-mhJ" id="rMb-bC-pfZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="edit" id="14j-Di-ch5">
+                                <connections>
+                                    <action selector="handlEditBarButtonClick:" destination="xZf-HK-mhJ" id="0An-h6-7M5"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="done" id="OUb-mD-Ol7">
+                                <connections>
+                                    <action selector="handleDoneBarButtonClick:" destination="xZf-HK-mhJ" id="LSo-BM-NcK"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addTabButton" destination="AfH-uv-HcO" id="XqF-mz-WAC"/>
+                        <outlet property="cancelBarButtonItem" destination="L5j-u4-Fef" id="YJm-fP-YiT"/>
+                        <outlet property="doneBarButtonItem" destination="OUb-mD-Ol7" id="e5w-3w-c9y"/>
+                        <outlet property="editBarButtonItem" destination="14j-Di-ch5" id="laT-JF-Fdr"/>
+                        <outlet property="labelBottomBarItem" destination="5Za-vV-akK" id="Lea-MZ-rRk"/>
+                        <outlet property="placeholderPrimaryLabel" destination="rCf-aS-QSQ" id="D7J-2h-nRT"/>
+                        <outlet property="placeholderSecondaryLabel" destination="R52-om-sbB" id="Uy2-RV-syu"/>
+                        <outlet property="placeholderView" destination="GSr-d5-7M9" id="WsG-pO-9db"/>
+                        <outlet property="tableView" destination="Jlx-qS-hJc" id="UM5-dK-QFU"/>
+                        <outlet property="trashBottomBarItem" destination="kcv-Oc-Aso" id="WEg-AZ-FNM"/>
+                        <segue destination="Yff-dw-UaA" kind="show" identifier="showEditTabController" id="nXn-Pu-WcP"/>
+                        <segue destination="sq1-AX-hYb" kind="show" identifier="showTabDetailsController" id="z0U-fs-uyH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f84-Si-71d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="-600"/>
+        </scene>
+        <!--MYPCreateOrEditTabStoryboard-->
+        <scene sceneID="lhw-m4-tRS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MYPCreateOrEditTabStoryboard" id="Yff-dw-UaA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VcX-Ge-xgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="-600"/>
+        </scene>
+        <!--MYPBinderTabDetailsStoryboard-->
+        <scene sceneID="O8k-rr-Kba">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MYPBinderTabDetailsStoryboard" id="sq1-AX-hYb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDV-wk-W9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="-428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddButton" width="16" height="16"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nXn-Pu-WcP"/>
+    </inferredMetricsTieBreakers>
+</document>

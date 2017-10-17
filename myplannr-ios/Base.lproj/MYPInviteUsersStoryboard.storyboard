@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L32-GO-I9d">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Users-->
+        <scene sceneID="vJj-u9-FRh">
+            <objects>
+                <viewController title="Add Users" id="L32-GO-I9d" customClass="MYPInviteUsersViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KJq-bX-Boq"/>
+                        <viewControllerLayoutGuide type="bottom" id="rQ7-GX-x8Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="12a-bE-wmB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHf-En-ZEa" customClass="MYPCardView">
+                                <rect key="frame" x="24" y="88" width="327" height="146"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4r2-Yk-dfI">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="146"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYe-8q-paQ" userLabel="Email Container View">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="48"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="example@gmail.com" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ELX-6V-uY4" userLabel="Email Text Field">
+                                                        <rect key="frame" x="78.5" y="14" width="224.5" height="20"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="L32-GO-I9d" id="DPg-7S-Wgq"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-dv-Fvx" userLabel="Label">
+                                                        <rect key="frame" x="24" y="18.5" width="30.5" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" red="0.58431372549019611" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ELX-6V-uY4" secondAttribute="trailing" constant="24" id="EeM-LQ-ESR"/>
+                                                    <constraint firstItem="Udg-dv-Fvx" firstAttribute="leading" secondItem="mYe-8q-paQ" secondAttribute="leading" constant="24" id="FpL-UU-bmt"/>
+                                                    <constraint firstItem="Udg-dv-Fvx" firstAttribute="baseline" secondItem="ELX-6V-uY4" secondAttribute="baseline" id="HVS-BQ-1ak"/>
+                                                    <constraint firstAttribute="height" constant="48" id="Td2-JD-P89"/>
+                                                    <constraint firstItem="ELX-6V-uY4" firstAttribute="leading" secondItem="Udg-dv-Fvx" secondAttribute="trailing" constant="24" id="hEw-cz-OqZ"/>
+                                                    <constraint firstItem="ELX-6V-uY4" firstAttribute="centerY" secondItem="mYe-8q-paQ" secondAttribute="centerY" id="p2U-3w-tyy"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="ymt-GX-lHN" appends="YES" id="CPL-nU-9aK"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEB-JD-19e" userLabel="Separator View 1">
+                                                <rect key="frame" x="0.0" y="48" width="327" height="1"/>
+                                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="BMR-aG-y3v"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-xJ-Gcp" userLabel="Access Type Container View">
+                                                <rect key="frame" x="0.0" y="49" width="327" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read-Only" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOv-cc-96a" userLabel="Access Type Value Label">
+                                                        <rect key="frame" x="225.5" y="14.5" width="77.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CA-Rg-hNr" userLabel="Access Type Label">
+                                                        <rect key="frame" x="24" y="18.5" width="40.5" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" red="0.58431372549019611" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstItem="9CA-Rg-hNr" firstAttribute="baseline" secondItem="JOv-cc-96a" secondAttribute="baseline" id="Jxl-k8-isX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JOv-cc-96a" secondAttribute="trailing" constant="24" id="Krs-Re-KfV"/>
+                                                    <constraint firstAttribute="height" constant="48" id="Vbg-Vh-OXN"/>
+                                                    <constraint firstItem="9CA-Rg-hNr" firstAttribute="leading" secondItem="lTt-xJ-Gcp" secondAttribute="leading" constant="24" id="XV4-Mr-KSF"/>
+                                                    <constraint firstItem="JOv-cc-96a" firstAttribute="centerY" secondItem="lTt-xJ-Gcp" secondAttribute="centerY" id="at6-vd-thh"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Xfy-v5-fuR" appends="YES" id="znS-pW-VGO"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoW-E1-Np2" userLabel="Separator View 2">
+                                                <rect key="frame" x="0.0" y="97" width="327" height="1"/>
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="9ie-Xi-Fnc"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuX-tq-VEJ">
+                                                <rect key="frame" x="0.0" y="98" width="327" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
+                                                <state key="normal" title="Add from contacts"/>
+                                                <connections>
+                                                    <action selector="handleAddFromContactsButton:" destination="L32-GO-I9d" eventType="touchUpInside" id="uRx-NU-LMq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mYe-8q-paQ" secondAttribute="trailing" id="1jj-3s-Wjn"/>
+                                            <constraint firstItem="mYe-8q-paQ" firstAttribute="leading" secondItem="4r2-Yk-dfI" secondAttribute="leading" id="1nR-w7-T7f"/>
+                                            <constraint firstItem="lTt-xJ-Gcp" firstAttribute="leading" secondItem="4r2-Yk-dfI" secondAttribute="leading" id="AlW-wH-Dvk"/>
+                                            <constraint firstAttribute="trailing" secondItem="lTt-xJ-Gcp" secondAttribute="trailing" id="tHg-bO-PXT"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="4r2-Yk-dfI" firstAttribute="top" secondItem="DHf-En-ZEa" secondAttribute="top" id="IhY-7M-HVW"/>
+                                    <constraint firstItem="4r2-Yk-dfI" firstAttribute="leading" secondItem="DHf-En-ZEa" secondAttribute="leading" id="d6z-ob-9hm"/>
+                                    <constraint firstAttribute="bottom" secondItem="4r2-Yk-dfI" secondAttribute="bottom" id="jUk-8e-hWU"/>
+                                    <constraint firstAttribute="trailing" secondItem="4r2-Yk-dfI" secondAttribute="trailing" id="wec-7K-7zm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DHf-En-ZEa" secondAttribute="trailing" constant="24" id="SJa-Xv-h8c"/>
+                            <constraint firstItem="DHf-En-ZEa" firstAttribute="leading" secondItem="12a-bE-wmB" secondAttribute="leading" constant="24" id="Tpu-I9-gsh"/>
+                            <constraint firstItem="DHf-En-ZEa" firstAttribute="top" secondItem="KJq-bX-Boq" secondAttribute="bottom" constant="24" id="wou-Dr-hL4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Users" id="6WE-0q-Syi">
+                        <barButtonItem key="rightBarButtonItem" title="Invite" id="R25-nI-uLR">
+                            <connections>
+                                <action selector="handleInviteBarButtonClick:" destination="L32-GO-I9d" id="WUX-7o-HoZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="accessTypeContainerView" destination="lTt-xJ-Gcp" id="MdU-nF-lcA"/>
+                        <outlet property="accessTypeLabel" destination="9CA-Rg-hNr" id="tbM-iu-NW5"/>
+                        <outlet property="accessTypeValueLabel" destination="JOv-cc-96a" id="tl1-iT-EIe"/>
+                        <outlet property="emailContainerView" destination="mYe-8q-paQ" id="Pqb-gk-ZKH"/>
+                        <outlet property="emailLabel" destination="Udg-dv-Fvx" id="FWM-Va-46S"/>
+                        <outlet property="emailTextField" destination="ELX-6V-uY4" id="IOU-Cr-f4V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wm6-UJ-ufc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ymt-GX-lHN" userLabel="Email Container Gesture Recognizer">
+                    <connections>
+                        <action selector="handleEmailContainerTap:" destination="L32-GO-I9d" id="91Q-6U-zXd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Xfy-v5-fuR" userLabel="Access Container Gesture Recognizer">
+                    <connections>
+                        <action selector="handleAccessTypeContainerTap:" destination="L32-GO-I9d" id="TSg-QM-a3s"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-65" y="-238"/>
+        </scene>
+    </scenes>
+</document>

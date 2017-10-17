@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bCX-au-K8A">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Manage Users-->
+        <scene sceneID="ru0-Jp-dP6">
+            <objects>
+                <tableViewController title="Manage Users" id="bCX-au-K8A" customClass="MYPManageBinderUsersViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" id="mAa-fD-cxQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="binderUserCellReuseIdentifier" rowHeight="64" id="Oyy-wk-OfL" customClass="MYPBinderUserCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oyy-wk-OfL" id="uUH-zb-IpM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GdJ-5N-qh8" userLabel="Content Card View">
+                                            <rect key="frame" x="24" y="0.0" width="327" height="64"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vib-Vq-eZl" userLabel="Avatar Image View">
+                                                    <rect key="frame" x="58" y="8" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="4a1-BZ-UtT"/>
+                                                        <constraint firstAttribute="height" constant="48" id="bBl-cB-CjB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRi-iv-HIh" userLabel="User Name Label">
+                                                    <rect key="frame" x="122" y="22" width="154" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="ReadOnlyBinderIconGray" translatesAutoresizingMaskIntoConstraints="NO" id="D4M-3s-rTn" userLabel="Access Type Image View">
+                                                    <rect key="frame" x="292" y="26" width="19" height="13"/>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                                <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZi-2i-dif" customClass="MYPCheckbox">
+                                                    <rect key="frame" x="16" y="19" width="26" height="26"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="26" id="BCI-Pl-i9Q"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="checked" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vib-Vq-eZl" secondAttribute="bottom" priority="750" constant="8" id="0H9-uT-Ju8"/>
+                                                <constraint firstItem="D4M-3s-rTn" firstAttribute="centerY" secondItem="GdJ-5N-qh8" secondAttribute="centerY" id="1rK-M2-8Mv"/>
+                                                <constraint firstItem="CRi-iv-HIh" firstAttribute="centerY" secondItem="GdJ-5N-qh8" secondAttribute="centerY" id="2R7-1W-D4m"/>
+                                                <constraint firstItem="vib-Vq-eZl" firstAttribute="centerY" secondItem="GdJ-5N-qh8" secondAttribute="centerY" id="2nJ-uh-NtS"/>
+                                                <constraint firstItem="D4M-3s-rTn" firstAttribute="leading" secondItem="CRi-iv-HIh" secondAttribute="trailing" constant="16" id="DP0-xM-2M2"/>
+                                                <constraint firstAttribute="trailing" secondItem="D4M-3s-rTn" secondAttribute="trailing" constant="16" id="Lyc-R9-cfU"/>
+                                                <constraint firstItem="vib-Vq-eZl" firstAttribute="leading" secondItem="cZi-2i-dif" secondAttribute="trailing" constant="16" id="XGZ-uC-cQA"/>
+                                                <constraint firstItem="cZi-2i-dif" firstAttribute="centerY" secondItem="GdJ-5N-qh8" secondAttribute="centerY" id="eDo-1Y-jIl"/>
+                                                <constraint firstItem="vib-Vq-eZl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GdJ-5N-qh8" secondAttribute="top" priority="750" constant="8" id="iTw-b7-J8F"/>
+                                                <constraint firstItem="cZi-2i-dif" firstAttribute="leading" secondItem="GdJ-5N-qh8" secondAttribute="leading" constant="16" id="rPJ-eE-Q6t"/>
+                                                <constraint firstItem="CRi-iv-HIh" firstAttribute="leading" secondItem="vib-Vq-eZl" secondAttribute="trailing" constant="16" id="sEC-NE-nSw"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="GdJ-5N-qh8" firstAttribute="leading" secondItem="uUH-zb-IpM" secondAttribute="leading" constant="24" id="0fh-MM-dCb"/>
+                                        <constraint firstAttribute="bottom" secondItem="GdJ-5N-qh8" secondAttribute="bottom" id="3o7-U0-1Z3"/>
+                                        <constraint firstItem="GdJ-5N-qh8" firstAttribute="top" secondItem="uUH-zb-IpM" secondAttribute="top" id="EKK-Fg-kEE"/>
+                                        <constraint firstAttribute="trailing" secondItem="GdJ-5N-qh8" secondAttribute="trailing" constant="24" id="RtU-Sr-VK9"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="accessTypeImageView" destination="D4M-3s-rTn" id="V74-e6-h0P"/>
+                                    <outlet property="avatarImageView" destination="vib-Vq-eZl" id="tPO-Zd-UyQ"/>
+                                    <outlet property="checkbox" destination="cZi-2i-dif" id="KOa-Bg-J3d"/>
+                                    <outlet property="checkboxLeadingConstraint" destination="rPJ-eE-Q6t" id="crT-Tw-0N0"/>
+                                    <outlet property="checkboxWidthConstraint" destination="BCI-Pl-i9Q" id="hCp-6Q-olb"/>
+                                    <outlet property="contentCardView" destination="GdJ-5N-qh8" id="b0Y-Sb-aZD"/>
+                                    <outlet property="userNameLabel" destination="CRi-iv-HIh" id="UEy-6c-VZY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="bCX-au-K8A" id="vkK-5J-NgD"/>
+                            <outlet property="delegate" destination="bCX-au-K8A" id="X7f-UK-gdg"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="jqW-yM-SzY"/>
+                        <barButtonItem enabled="NO" title="Label Item" id="YKa-s4-hRd"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="UvE-oB-bNh"/>
+                        <barButtonItem enabled="NO" systemItem="trash" id="sA8-su-1Dp">
+                            <connections>
+                                <action selector="handleTrashBottomBarItemClick:" destination="bCX-au-K8A" id="LWK-eC-Evz"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Manage Users" id="TJq-uf-0D0">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="edit" id="ry6-gG-Ian">
+                                <connections>
+                                    <action selector="handleEditBarButtonClick:" destination="bCX-au-K8A" id="Iic-i5-zqE"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="done" id="tdJ-vE-Pnb">
+                                <connections>
+                                    <action selector="handleCancelBarButtonClick:" destination="bCX-au-K8A" id="9Nq-dB-eWp"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cancelBarButtonItem" destination="tdJ-vE-Pnb" id="iif-Is-CB3"/>
+                        <outlet property="editBarButtonItem" destination="ry6-gG-Ian" id="lgg-nZ-KpL"/>
+                        <outlet property="labelBottomBarItem" destination="YKa-s4-hRd" id="b35-cE-nAo"/>
+                        <outlet property="trashBottomBarItem" destination="sA8-su-1Dp" id="KY4-oI-U6j"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeA-LY-lHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Vfg-U2-2ha">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Item" id="daf-Ju-9yk"/>
+                    </items>
+                </toolbar>
+            </objects>
+            <point key="canvasLocation" x="-54" y="-110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ReadOnlyBinderIconGray" width="19" height="13"/>
+    </resources>
+</document>

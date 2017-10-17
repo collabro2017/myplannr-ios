@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="ebQ-Zu-58I" customClass="MYPBinderCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nj-Mq-Ffj" userLabel="Binder Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="258"/>
+                        <subviews>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xu6-7c-RtI" userLabel="White Line View">
+                                <rect key="frame" x="10" y="0.0" width="1" height="258"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="jWI-Uv-AxS"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.050000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVL-Fe-Lev" userLabel="Black Line View">
+                                <rect key="frame" x="11" y="20" width="1" height="218"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="nuP-Ap-NYa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Waw-oN-cLa" userLabel="Binder Details Container View">
+                                <rect key="frame" x="0.0" y="60" width="180" height="120.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner's name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q86-8e-lCU" userLabel="Owner Name Label">
+                                        <rect key="frame" x="16" y="32" width="156" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.58431372549019611" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Binder name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avB-sB-NJP" userLabel="Binder Name Label">
+                                        <rect key="frame" x="16" y="58.5" width="156" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22/12/2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGA-sf-4Tg" userLabel="Event Date Label">
+                                        <rect key="frame" x="16" y="88" width="156" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.58431372549019611" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="lGA-sf-4Tg" firstAttribute="top" secondItem="avB-sB-NJP" secondAttribute="bottom" constant="8" id="2AZ-XZ-1fw"/>
+                                    <constraint firstItem="avB-sB-NJP" firstAttribute="leading" secondItem="Waw-oN-cLa" secondAttribute="leading" constant="16" id="Frl-Kg-woY"/>
+                                    <constraint firstAttribute="trailing" secondItem="avB-sB-NJP" secondAttribute="trailing" constant="8" id="PRJ-IY-xLx"/>
+                                    <constraint firstItem="Q86-8e-lCU" firstAttribute="leading" secondItem="Waw-oN-cLa" secondAttribute="leading" constant="16" id="PXk-e9-3M6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q86-8e-lCU" secondAttribute="trailing" constant="8" id="USO-oZ-isx"/>
+                                    <constraint firstAttribute="bottom" secondItem="lGA-sf-4Tg" secondAttribute="bottom" constant="18" id="W8V-Ph-TV0"/>
+                                    <constraint firstItem="lGA-sf-4Tg" firstAttribute="leading" secondItem="avB-sB-NJP" secondAttribute="leading" id="XYx-8l-jFN"/>
+                                    <constraint firstItem="Q86-8e-lCU" firstAttribute="top" secondItem="Waw-oN-cLa" secondAttribute="top" constant="32" id="hoq-WT-ROi"/>
+                                    <constraint firstItem="avB-sB-NJP" firstAttribute="top" secondItem="Q86-8e-lCU" secondAttribute="bottom" constant="12" id="i0Q-fM-hgq"/>
+                                    <constraint firstItem="lGA-sf-4Tg" firstAttribute="trailing" secondItem="avB-sB-NJP" secondAttribute="trailing" id="weW-1V-HN2"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9IJ-m4-nLf" userLabel="Owner Avatar Image View">
+                                <rect key="frame" x="16" y="36" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Ijx-qP-GsY"/>
+                                    <constraint firstAttribute="height" constant="48" id="uI9-4d-cwR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXS-Zt-651" userLabel="Binder Button">
+                                <rect key="frame" x="146" y="221" width="29" height="32"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="ReadOnlyBinderIconWhite"/>
+                                <connections>
+                                    <action selector="handleBinderButtonClick:" destination="ebQ-Zu-58I" eventType="touchUpInside" id="d5X-Ig-w7G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9IJ-m4-nLf" firstAttribute="leading" secondItem="6Nj-Mq-Ffj" secondAttribute="leading" constant="16" id="5gv-bJ-PM3"/>
+                            <constraint firstItem="Waw-oN-cLa" firstAttribute="top" secondItem="6Nj-Mq-Ffj" secondAttribute="top" constant="60" id="61b-YK-eG4"/>
+                            <constraint firstItem="Waw-oN-cLa" firstAttribute="leading" secondItem="6Nj-Mq-Ffj" secondAttribute="leading" id="8ii-rr-YeS"/>
+                            <constraint firstItem="Xu6-7c-RtI" firstAttribute="top" secondItem="6Nj-Mq-Ffj" secondAttribute="top" id="9Nv-ga-NYE"/>
+                            <constraint firstAttribute="bottom" secondItem="uXS-Zt-651" secondAttribute="bottom" constant="5" id="DeY-eS-gfZ"/>
+                            <constraint firstItem="tVL-Fe-Lev" firstAttribute="top" secondItem="6Nj-Mq-Ffj" secondAttribute="top" constant="20" id="Ejo-mf-XiE"/>
+                            <constraint firstAttribute="bottom" secondItem="Xu6-7c-RtI" secondAttribute="bottom" id="XGq-BX-5oA"/>
+                            <constraint firstAttribute="bottom" secondItem="tVL-Fe-Lev" secondAttribute="bottom" constant="20" id="XbC-pY-mgP"/>
+                            <constraint firstAttribute="trailing" secondItem="Waw-oN-cLa" secondAttribute="trailing" id="jQI-P8-O3K"/>
+                            <constraint firstItem="tVL-Fe-Lev" firstAttribute="leading" secondItem="Xu6-7c-RtI" secondAttribute="trailing" id="ty1-DQ-Iu2"/>
+                            <constraint firstItem="Xu6-7c-RtI" firstAttribute="leading" secondItem="6Nj-Mq-Ffj" secondAttribute="leading" constant="10" id="tzI-2Y-mfR"/>
+                            <constraint firstAttribute="trailing" secondItem="uXS-Zt-651" secondAttribute="trailing" constant="5" id="wvw-mX-uQs"/>
+                            <constraint firstItem="9IJ-m4-nLf" firstAttribute="top" secondItem="6Nj-Mq-Ffj" secondAttribute="top" constant="36" id="zeL-SI-g08"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C91-i5-7pQ">
+                        <rect key="frame" x="76" y="268" width="28" height="27"/>
+                        <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                        <state key="normal" image="BinderChatButton"/>
+                        <connections>
+                            <action selector="handleChatButtonClick:" destination="ebQ-Zu-58I" eventType="touchUpInside" id="9aE-w0-OaM"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6Nj-Mq-Ffj" firstAttribute="trailing" secondItem="ebQ-Zu-58I" secondAttribute="trailing" id="628-N1-8QH"/>
+                <constraint firstItem="6Nj-Mq-Ffj" firstAttribute="leading" secondItem="ebQ-Zu-58I" secondAttribute="leading" id="6fF-PM-2Kw"/>
+                <constraint firstItem="6Nj-Mq-Ffj" firstAttribute="top" secondItem="ebQ-Zu-58I" secondAttribute="top" id="FXE-vt-4cd"/>
+                <constraint firstAttribute="bottom" secondItem="C91-i5-7pQ" secondAttribute="bottom" constant="5" id="GYr-U8-ddP"/>
+                <constraint firstItem="C91-i5-7pQ" firstAttribute="top" secondItem="6Nj-Mq-Ffj" secondAttribute="bottom" constant="10" id="arN-eK-MHH"/>
+                <constraint firstItem="C91-i5-7pQ" firstAttribute="centerX" secondItem="ebQ-Zu-58I" secondAttribute="centerX" id="waI-Kg-BDE"/>
+            </constraints>
+            <size key="customSize" width="214" height="342"/>
+            <connections>
+                <outlet property="binderButton" destination="uXS-Zt-651" id="iZd-el-keb"/>
+                <outlet property="binderChatButton" destination="C91-i5-7pQ" id="wE9-3t-9ca"/>
+                <outlet property="binderContainerView" destination="6Nj-Mq-Ffj" id="KY8-zQ-LGC"/>
+                <outlet property="binderNameLabel" destination="avB-sB-NJP" id="8lV-x5-inc"/>
+                <outlet property="eventDateLabel" destination="lGA-sf-4Tg" id="6en-Ba-IeD"/>
+                <outlet property="ownerAvatarImageView" destination="9IJ-m4-nLf" id="BtX-vn-Dg8"/>
+                <outlet property="ownerNameLabel" destination="Q86-8e-lCU" id="Hw2-Fn-2lm"/>
+                <outlet property="ownerNameLabelTopConstraint" destination="hoq-WT-ROi" id="50w-yY-kFf"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="91"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BinderChatButton" width="24" height="23"/>
+        <image name="ReadOnlyBinderIconWhite" width="19" height="13"/>
+    </resources>
+</document>

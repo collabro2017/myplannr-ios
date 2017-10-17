@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="MYPBinder" representedClassName="MYPBinder" parentEntity="MYPServiceObject" syncable="YES">
+        <attribute name="accessType" optional="YES" attributeType="Integer 16" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="binderId" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="colorString" attributeType="String" minValueString="3" maxValueString="7" syncable="YES"/>
+        <attribute name="eventDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isOwner" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="1" syncable="YES"/>
+        <relationship name="invitedUsers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MYPInvitedUser" inverseName="sharedBinder" inverseEntity="MYPInvitedUser" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MYPUser" inverseName="ownedBinders" inverseEntity="MYPUser" syncable="YES"/>
+    </entity>
+    <entity name="MYPBinderTab" representedClassName="MYPBinderTab" parentEntity="MYPServiceObject" syncable="YES">
+        <attribute name="binderId" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="colorString" attributeType="String" minValueString="3" maxValueString="7" syncable="YES"/>
+        <attribute name="tabId" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" attributeType="String" minValueString="1" syncable="YES"/>
+        <relationship name="documents" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="MYPDocument" inverseName="binderTab" inverseEntity="MYPDocument" syncable="YES"/>
+    </entity>
+    <entity name="MYPDocument" representedClassName="MYPDocument" parentEntity="MYPServiceObject" syncable="YES">
+        <attribute name="contentType" attributeType="String" syncable="YES"/>
+        <attribute name="documentId" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="downloadedDocumentRelativePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileSize" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imgHeight" optional="YES" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imgWidth" optional="YES" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="storagePreviewUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storageUrl" attributeType="String" syncable="YES"/>
+        <relationship name="binderTab" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MYPBinderTab" inverseName="documents" inverseEntity="MYPBinderTab" syncable="YES"/>
+    </entity>
+    <entity name="MYPInvitedUser" representedClassName="MYPInvitedUser" parentEntity="MYPServiceObject" syncable="YES">
+        <attribute name="accessType" attributeType="Integer 16" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="avatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="binderId" optional="YES" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" attributeType="String" minValueString="5" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActive" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="sharedBinder" maxCount="1" deletionRule="Nullify" destinationEntity="MYPBinder" inverseName="invitedUsers" inverseEntity="MYPBinder" syncable="YES"/>
+    </entity>
+    <entity name="MYPServiceObject" representedClassName="MYPServiceObject" isAbstract="YES" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="MYPUser" representedClassName="MYPUser" parentEntity="MYPServiceObject" syncable="YES">
+        <attribute name="authToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="avatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" minValueString="5" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 32" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="ownedBinders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MYPBinder" inverseName="owner" inverseEntity="MYPBinder" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MYPBinder" positionX="-524" positionY="477" width="128" height="163"/>
+        <element name="MYPBinderTab" positionX="-207" positionY="252" width="128" height="120"/>
+        <element name="MYPDocument" positionX="-405" positionY="108" width="128" height="180"/>
+        <element name="MYPInvitedUser" positionX="25" positionY="396" width="128" height="178"/>
+        <element name="MYPServiceObject" positionX="225" positionY="252" width="128" height="75"/>
+        <element name="MYPUser" positionX="27" positionY="693" width="128" height="148"/>
+    </elements>
+</model>
